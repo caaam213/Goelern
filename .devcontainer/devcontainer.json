@@ -1,0 +1,19 @@
+{
+    "name": "container",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "settings": {
+        "python.pythonPath": "/usr/local/bin/python",
+        "editor.formatOnSave": true
+    },
+    "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "esbenp.prettier-vscode"
+    ],
+    "postCreateCommand": "pipenv install --dev",
+    "forwardPorts": [8000],
+    "remoteUser": "root"
+}

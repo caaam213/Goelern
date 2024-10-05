@@ -1,36 +1,36 @@
 from urllib.parse import urlparse
 from bs4 import BeautifulSoup
-import pandas
 import requests
 
+from utils.s3_utils import save_data_on_s3
 
-def get_category(url:str) -> str:
-    name = urlparse(url).path.split("/")[-1]
-    
+
+def get_category(scrap_url: str) -> str:
+    name = urlparse(scrap_url).path.split("/")[-1]
+
     # Remove -pdf from the name
     name = name.replace("-pdf", "")
-    
+
     # Replace - with _
     name = name.replace("-", "_")
-    
+
     return name
-    
 
 
-def get_vocabulary(url: str) -> pandas.DataFrame:
-    response = requests.get(url)
+def get_vocabulary(scrap_url: str) -> list:
+    response = requests.get(scrap_url)
     soup = BeautifulSoup(response.text, "html.parser")
-    vocabulary = []
+    vocabulary_list = []
 
     # Get title of the page
-    category = get_category(url)
+    category = get_category(scrap_url)
 
     # Get table tag
     table_tag = soup.find("table")
 
     if not table_tag:
         print("No table found")
-        return pandas.DataFrame()
+        return vocabulary_list
 
     tr_tags = table_tag.find_all("tr")
 
@@ -40,6 +40,6 @@ def get_vocabulary(url: str) -> pandas.DataFrame:
     # First td is the French word, second td is the German word
     for tr_tag in tr_tags:
         td_tags = tr_tag.find_all("td")
-        vocabulary.append([td_tags[0].text, td_tags[1].text, category])
+        vocabulary_list.append([td_tags[0].text, td_tags[1].text, category])
 
-    return pandas.DataFrame(vocabulary, columns=["French", "German", "Category"], index=None)
+    return vocabulary_list

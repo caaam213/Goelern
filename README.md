@@ -32,8 +32,8 @@ Next, the goal is to get German articles, grammatical rules and podcasts to expl
     - Similarity score between french and english (using which library ?)
 - [x] Find the frequency of a word generally used **(WordFreq library could disappear so maybe find another solution ?)**
 - [x] Configure the DB
-- [ ] Save recuperated data on S3
-- [ ] Store data on sqllite  
+- [x] Save recuperated data on S3
+- [x] Store data on sqllite  
 - [ ] Use airflow to call periodically the tasks : get data and send every hour a word with its translation. If the score of a word is high, this one has a lot of chance to be chosen to be sent for the user
 - [ ] Set the architecture of the project 
 - [ ] Configure API structure

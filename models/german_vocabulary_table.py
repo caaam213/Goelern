@@ -4,7 +4,8 @@ from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base() 
 
-class GermanVocabulary(Base):
+class GermanVocabularyTable(Base):
+        
     __tablename__ = 'german_vocabulary'
     id = Column(Integer, primary_key=True)
     german_word = Column(String(100))

@@ -3,16 +3,17 @@ import sys
 from sqlalchemy import create_engine
 from dotenv import load_dotenv
 
+from app.db.german_vocabulary_table import GermanVocabularyTable
+from etl.Vocabulary.process_vocabulary import ProcessVocabulary
+from etl.Vocabulary.scrap_vocabulary import ScrapVocabulary
+from app.db.german_vocabulary_table import Base
+
 load_dotenv()
 
 models_path = os.getenv("MODELS_PATH")
 
 if models_path:
     sys.path.append(models_path)
-
-from app.process_vocabulary import ProcessVocabulary
-from app.scrap_vocabulary import ScrapVocabulary
-from models.german_vocabulary_table import Base, GermanVocabularyTable
 
 
 class StoreVocabulary:
@@ -28,7 +29,7 @@ class StoreVocabulary:
             print(f"Table {GermanVocabularyTable.__tablename__} already exists")
 
     def _save_data(self, engine, df, table_name):
-        df.to_sql(table_name, con=engine, if_exists="replace", index=False)
+        df.to_sql(table_name, con=engine, if_exists="append", index=False)
 
     def run(self):
         engine = create_engine(os.environ["DB_NAME"], echo=True)
@@ -42,10 +43,5 @@ class StoreVocabulary:
         print(f"Data saved in {GermanVocabularyTable.__tablename__} table")
 
         return True
+    
 
-
-first_data = ScrapVocabulary(
-    "https://fichesvocabulaire.com/liste-verbes-allemand-pdf-action-mouvements"
-).run()
-data = ProcessVocabulary(first_data).run()
-StoreVocabulary(data).run()

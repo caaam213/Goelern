@@ -7,7 +7,7 @@ MERAOUI Camelia
 The goal of this project is to improve the learning of German (for now) using data from https://fichesvocabulaire.com/ and AI.
 
 I created this project for many reasons :
-- Learn Pyspark and Airflow 
+- Learn Pyspark 
 - Practice my data engineering skills
 - Learn SQL Window function
 - Improve my skills in AI 
@@ -18,9 +18,7 @@ Next, the goal is to get German articles, grammatical rules and podcasts to expl
 ## Used technologies
 - Python
 - PySpark
-- Airflow
 - Streamlit
-- FastAPI
 - SQLLite 
 
 ## Tasks
@@ -34,11 +32,10 @@ Next, the goal is to get German articles, grammatical rules and podcasts to expl
 - [x] Configure the DB
 - [x] Save recuperated data on S3
 - [x] Store data on sqllite  
-- [ ] Use airflow to call periodically the tasks : get data and send every hour a word with its translation. If the score of a word is high, this one has a lot of chance to be chosen to be sent for the user
-- [ ] Set the architecture of the project 
-- [ ] Configure API structure
-- [ ] Test with window functions and CTEs to practice. Those functions will be called using an API
+- [x] Set the architecture of the project 
+- [x] Display word list by category and sort by frequencies or alphabetical order
 - [ ] Transform data from ML (normalization, etc.)
+- [ ] Test with window functions and CTEs to practice. Those functions will be called using an API
 - [ ] API endpoint to generate a .txt with words in format "word:translation" (with annotation ?) for anki, quizlet and so on 
 - [ ] Calculate score using number_char, frequency, similarity
 - [ ] API endpoint to generate a file which is a summary of the learning
@@ -48,4 +45,7 @@ Next, the goal is to get German articles, grammatical rules and podcasts to expl
 If the user find the word correctly, the score of the word is reduced by one, else, it is incremented by one. The objective is to often propose the words which have the greatest score. To do so, we can use probabilities
 - [ ] Generate some sentences using a LLM to understand how to use a word 
 - [ ] Add Unit test
+- [ ] Vérifier le format de l'URL pour la partie extraction
 - [ ] Add CD/CI in order to manage modifications
+- [ ] Use airflow to call periodically the tasks : get data and send every hour a word with its translation. If the score of a word is high, this one has a lot of chance to be chosen to be sent for the user
+- [ ] Verify if a same word in german is not added in db

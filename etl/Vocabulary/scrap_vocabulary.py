@@ -56,7 +56,7 @@ class ScrapVocabulary:
         for tr_tag in tr_tags:
             td_tags = tr_tag.find_all("td")
             vocabulary_list.append([td_tags[0].text, td_tags[1].text, category])
-        
+
         return vocabulary_list
 
     def run(self) -> list:
@@ -65,11 +65,12 @@ class ScrapVocabulary:
         category = self._get_category(self.scrap_url)
 
         response = requests.get(self.scrap_url)
-        
+
         if response.status_code != 200:
             print(f"Error: {response.status_code}")
             return []
-        
+
         vocabulary_list = self._extract_urls_in_bs4(response, category)
 
         return vocabulary_list
+

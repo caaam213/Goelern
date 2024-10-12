@@ -4,9 +4,9 @@ from pyspark.sql.functions import length
 from pyspark.sql.functions import udf
 from pyspark.sql.types import FloatType
 
-from app.scrap_vocabulary import ScrapVocabulary
 from difflib import SequenceMatcher
 from wordfreq import word_frequency
+
 
 class ProcessVocabulary:
 
@@ -37,20 +37,15 @@ class ProcessVocabulary:
         """
         return word_frequency(word, "de")
 
-    # def _store_data(data): # TODO : Move it to the storing part
-    #     df_to_save = data.orderBy(data["frequency"].desc()).select(
-    #         "French_word", "German_word"
-    #     )
-    #     category_value = data.select("Category").first()[0]
-    #     output_file = f'{os.environ["DATA_PATH"]}/{category_value}_vocabulary.txt'
-    #     print(f"Saving the data to {output_file}")
+    def _store_data(self, data):  # TODO : Move it to the storing part
+        df_to_save = data.orderBy(data["frequency"].desc()).select(
+            "French_word", "German_word"
+        )
+        category_value = data.select("Category").first()[0]
+        output_file = f"/data/{category_value}_vocabulary.txt"
+        print(f"Saving the data to {output_file}")
 
-    #     df_to_save.toPandas().to_csv(
-    #         output_file,
-    #         sep="\t",
-    #         index=False,
-    #         header=False
-    #     )
+        df_to_save.toPandas().to_csv(output_file, sep="\t", index=False, header=False)
 
     def run(self):
 
@@ -87,11 +82,11 @@ class ProcessVocabulary:
 
         # Show the data with the highest frequencies
         df_spark.show(5)
+        
+        # Store the data
+        self._store_data(df_spark)
 
         # Convert the DataFrame to a pandas DataFrame
         df_pandas = df_spark.toPandas()
 
         return df_pandas
-
-
-

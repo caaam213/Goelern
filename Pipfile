@@ -18,6 +18,7 @@ wordfreq = "*"
 sqlalchemy = "*"
 python-dotenv = "*"
 boto3 = "*"
+streamlit = "*"
 
 [requires]
 python_version = "3.11"

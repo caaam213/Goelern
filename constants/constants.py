@@ -1,0 +1,13 @@
+NO_SORT_STR = "no sort"
+ALPHABETICAL_ORDER_STR = "alphabetical order"
+FREQUENCY_STR = "frequency"
+LIST_OF_SORT_FIELDS = [NO_SORT_STR, ALPHABETICAL_ORDER_STR, FREQUENCY_STR]
+
+NO_ORDER_STR = "no order"
+ASC_STR = "asc"
+DESC_STR = "desc"
+LIST_OF_ORDER_TYPES = [ASC_STR, DESC_STR]
+
+ALL = "All"
+
+

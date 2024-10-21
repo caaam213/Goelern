@@ -34,6 +34,7 @@ Next, the goal is to get German articles, grammatical rules and podcasts to expl
 - [x] Store data on sqllite  
 - [x] Set the architecture of the project 
 - [x] Display word list by category and sort by frequencies or alphabetical order
+- [ ] Use MongoDB to store data (Currently on this task, but connecting to mongodb doesnt seem to work 2024-10-21)
 - [ ] Transform data from ML (normalization, etc.)
 - [ ] Test with window functions and CTEs to practice. Those functions will be called using an API
 - [ ] API endpoint to generate a .txt with words in format "word:translation" (with annotation ?) for anki, quizlet and so on 

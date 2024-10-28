@@ -51,4 +51,3 @@ If the user find the word correctly, the score of the word is reduced by one, el
 - [ ] Add Unit test
 - [ ] Add CD/CI in order to manage modifications
 - [ ] Use airflow to call periodically the tasks : get data and send every hour a word with its translation. If the score of a word is high, this one has a lot of chance to be chosen to be sent for the user
-

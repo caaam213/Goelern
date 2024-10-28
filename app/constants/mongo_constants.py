@@ -1,0 +1,1 @@
+CONSTANTS_TABLE = "constants"

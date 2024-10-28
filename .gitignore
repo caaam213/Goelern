@@ -1,6 +1,7 @@
 .env
 s3_credentials
-/db
-data
+/sqllite_db
+/data
 artifacts
 __pycache__/
+/code_archive

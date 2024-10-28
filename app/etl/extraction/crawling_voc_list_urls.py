@@ -1,24 +1,24 @@
 import json
-import os
 from typing import Union
 from bs4 import BeautifulSoup
 import requests
 
-from utils.json_utils import load_json
-from utils.local_files_utils import load_data, save_data
-from utils.s3_utils import get_data_from_s3, save_data_on_s3
+from app.constants.file_constants import SCRAP_URLS_PATH_FILE, SCRAP_URL_FILE_NAME
+from app.etl.extraction.abstract_request import AbstractRequest
+from utils.utils_files.json_utils import load_json
+from utils.utils_files.local_files_utils import load_data, save_data
+from utils.utils_files.s3_utils import get_data_from_s3, save_data_on_s3
+from utils.utils_mongo.constants_collection import get_data_by_lang
 
 
-class CrawlingVocListUrls:
+class CrawlingVocListUrls(AbstractRequest):
     """
     This class is responsible for extracting the urls of the vocabulary lists from the global url
     """
 
-    def __init__(self, global_url: str):
-        self.global_url = global_url
-        self.local_path = (
-            f'{os.environ["DATA_PATH"]}/{os.environ["SCRAP_URLS_PATH_FILE"]}'
-        )
+    def __init__(self, lang:str):
+        AbstractRequest.__init__(self)
+        self.data_lang = get_data_by_lang(lang)
 
     def _extract_urls_in_bs4(self, response:requests.Response) -> list:
         """Extract urls from the response using BeautifulSoup
@@ -60,9 +60,13 @@ class CrawlingVocListUrls:
         """
 
         if not use_s3:
-            voc_list_urls = load_data(self.local_path)
+            voc_list_urls = load_data(
+                SCRAP_URLS_PATH_FILE.format(self.data_lang.get("language"))
+            )
         else:
-            voc_list_urls = get_data_from_s3(os.environ["SCRAP_URLS_PATH_S3"])
+            voc_list_urls = get_data_from_s3(
+                SCRAP_URL_FILE_NAME.format(self.data_lang.get("language"))
+            )
 
             if voc_list_urls:
                 voc_list_urls = voc_list_urls.decode("utf-8").replace("'", '"')
@@ -78,24 +82,40 @@ class CrawlingVocListUrls:
             use_s3 (bool): True if we save the data on s3 else False
         """
         if not use_s3:
-            save_data(self.local_path, json.dumps(data))
+            save_data(
+                SCRAP_URLS_PATH_FILE.format(self.data_lang.get("language")),
+                json.dumps(data),
+            )
         else:
-            save_data_on_s3(os.environ["SCRAP_URLS_PATH_FILE"], data)
+            save_data_on_s3(
+                SCRAP_URL_FILE_NAME.format(self.data_lang.get("language")), data
+            )
 
     def run(self, use_s3: bool = False) -> list:
+        """
+            Run the component
+
+        Args:
+            use_s3 (bool, optional): True if the data is saved on s3, else False. Defaults to False.
+
+        Returns:
+            list: list of urls to scrap
+        """
+        # Check if data_lang is not empty (means that the chosen lang is invalid)
+        if not self.data_lang:
+            return []
 
         # Check if data is already saved
         voc_list_urls = self._get_data_from_saved_file(use_s3)
         if voc_list_urls:
+            print("The crawling urls are already saved")
             return voc_list_urls
 
-        # If data is not found, scrap the global url
-        response = requests.get(self.global_url)
-        
-        if response.status_code != 200:
-            print(f"Error: {response.status_code}")
-            return []
-        
+        # Get data if not saved
+        response = self.get_data(self.data_lang.get("crawling_url"))
+        if not response:
+            return voc_list_urls
+
         voc_list_urls = self._extract_urls_in_bs4(response)
 
         # Save the data on S3 or locally

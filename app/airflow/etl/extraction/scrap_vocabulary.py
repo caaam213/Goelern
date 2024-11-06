@@ -1,17 +1,27 @@
+from datetime import datetime
+import logging
+import os
 import re
+import sys
+from typing import Dict, Optional, Union
 from urllib.parse import urlparse
 from bs4 import BeautifulSoup
 import requests
+import pandas as pd
+from airflow.providers.mongo.hooks.mongo import MongoHook
 
-from app.etl.extraction.abstract_request import AbstractRequest
+sys.path.insert(0, "/opt/airflow/etl")
+from extraction.abstract_request import AbstractRequest
 
-
+sys.path.insert(0, "/opt/")
+from utils.utils_mongo.operation_mongo import find_data
 
 class ScrapVocabulary(AbstractRequest):
 
     def __init__(self):
         AbstractRequest.__init__(self)
         self.pattern = r"^https?:\/\/fichesvocabulaire\.com\/.*"
+        
 
     def _get_category(self, scrap_url: str) -> str:
         """Get category name for the vocabulary list in the url
@@ -65,7 +75,7 @@ class ScrapVocabulary(AbstractRequest):
 
         return vocabulary_list
 
-    def verify_scrap_url(self, scrap_url: str) -> bool:
+    def _verify_scrap_url(self, scrap_url: str) -> bool:
         """Verify if the url is valid using regex
 
         Args:
@@ -76,18 +86,29 @@ class ScrapVocabulary(AbstractRequest):
         """
         return bool(re.match(self.pattern, scrap_url))
 
-    def run(self, scrap_url: str) -> list:
+    def run(self, mongo_hook: MongoHook, lang:str, scrap_url: str) -> list:
         """Run the component
 
         Args:
-            scrap_url (str): url to scrap
+            mongo_hook (MongoHook): Airflow hook for MongoDB connection
+            lang (str): Language of the vocabulary list
+            scrap_url (str): Url of the vocabulary list
 
         Returns:
             list: list of words and their translations
         """
+        self.data_lang = find_data(mongo_hook, os.environ["MONGO_DB_DEV"], "constants", {"language": lang})
+        
+        # If data_lang is empty, return an empty list
+        if not self.data_lang:
+            logging.error("No data found for the language")
+            return []
+    
+        base_name_col = self.data_lang.get("base_name_col")
+        trans_name_col = self.data_lang.get("translate_name_col")
 
         # Verify if url is valid
-        if not self.verify_scrap_url(scrap_url):
+        if not self._verify_scrap_url(scrap_url):
             print("Scrap url is not valid")
             return []
 
@@ -100,5 +121,14 @@ class ScrapVocabulary(AbstractRequest):
             return []
 
         vocabulary_list = self._extract_urls_in_bs4(response, category)
+        df_vocabularies = pd.DataFrame(vocabulary_list, columns=[
+                base_name_col,
+                trans_name_col,
+                "Category",
+            ])
+        date = datetime.now().strftime("%Y%m%d")
+    
+        path_csv_file = f"/opt/airflow/data/goelern_{date}.csv"
+        df_vocabularies.to_csv(path_csv_file, index=False)
 
         return vocabulary_list

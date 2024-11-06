@@ -1,53 +1,74 @@
-# Application to learn German : Goelern
+# Goelern
 
 ## Author 
 MERAOUI Camelia
 
 ## Description
-Initially, the goal is to create an app to learn German using data from https://fichesvocabulaire.com/ and AI.
+Initially, the goal is to create an app to learn German using data from https://fichesvocabulaire.com/. 
+Then, those data will be used to create a web interface to learn German. 
 
-I created this project for many reasons :
-- Learn Pyspark 
-- Practice my data engineering skills
-- Learn SQL Window function
-- Improve my skills in AI 
-- Learn Airflow 
+## Installation and running the project
+1. Clone the repository using the git bash
+```
+    git clone git@github.com:caaam213/Goelern.git
+```
 
-Now, it is possible to get vocabulary for every languages in the website.
-For now, the graphical interface will only be for the German vocabulary
+2. Build the two images from the [Folder app Dockerfile](/app/Dockerfile) and [Folder webapp Dockerfile](/webapp/Dockerfile) using those commands : 
+```
+    docker build --pull --rm -f "app\Dockerfile" -t goelern-etl:latest "app"
+```
 
-## Used technologies
-- Python
-- PySpark
-- Streamlit
-- SQLLite 
-- MongoDB
 
-## Tasks
-### Vocabulary lists
-- [x] Configure the Pipfile and the Docker files
-- [x] Implement script to extract vocabulary lists 
-- [x] Process data to add features for ML to find the difficulty of a word : 
-    - Extract the number of letters for German words
-    - Similarity score between french and english (using which library ?)
-- [x] Find the frequency of a word generally used
-- [x] Configure the DB
-- [x] Save recuperated data on S3
-- [x] Store data on sqllite  
-- [x] Set the architecture of the project 
-- [x] Display word list by category and sort by frequencies or alphabetical order
-- [x] Verify URL format 
-- [x] Transform data from ML (normalization, etc.)
-- [x] Create etl classes in order to manage several languages
-- [x] Save in csv format when scraping for the model
-- [x] Calculate score using number_char and similarity score
-- [x] Use Machine Learning to predict the difficulty of a word according to the number of letters and the similarity score. The goal is to attribute a starting score
-- [ ] Verify if a same word in german is not added in db
+```
+    docker build --pull --rm -f "webapp\Dockerfile" -t webapp:latest "webapp"
+```
+
+3. Execute the docker-compose file in order to activate the needed images. 
+
+The images are : 
+    
+- goelern-etl : It is the image which enables the data collection using airflow
+- webapp : Image to launch the webapp 
+- mongo : Image to use MongoDB to store and interact with data
+
+4. Connect to Airflow interface : http://localhost:8080/ with Admin as user and the password from this [file](/app/airflow/standalone_admin_password.txt)
+
+5. Navigate on Admin/Connections and create a user with those information : 
+![mongo_airflow](/readme_images/mongo_airflow.png)
+
+6. You can now use the airflow interface to execute the DAG :)
+
+## Architecture
+### App folder 
+This folder contains the pipeline to get data from https://fichesvocabulaire.com/ using Airflow.
+
+**create-urls DAG**
+
+Not created but the goal is to create parameters for the goelern-etl DAG. 
+The parameters are the targeted language and the URL.
+This pipeline will be composed of : 
+- reinitialise status : Reinitialise the status of the parameter each month so the parameter will be scrapable again
+- get_all_parameters : Get all parameters from a base url and store them in MongoDB.
+
+**goelern-etl DAG**
+
+This DAG is a pipeline which uses those functions for now :
+- get_parameters : Not created yet. The goal is to select a parameter created by the create-urls DAG and 
+- scrap_vocabulary : Extraction phase -> Contains functions to get data.
+
+## Features
+### Get words
+For now, you can get words using the goelern-etl DAG.
+
+ 
+
+## Future Enhancements
+- [ ] Finish the pipeline to transform and store data
+- [ ] Create an interface where a user can create queries for airflow pipeline by providing the url and language to scrap 
 - [ ] Test with window functions and CTEs to practice. Those functions will be called using an API
 - [ ] Exercise : Chose a category and random word in French or German will be provided and we have to find its translation.
 If the user find the word correctly, the score of the word is reduced by one, else, it is incremented by one. The objective is to often propose the words which have the greatest score. To do so, we can use probabilities
 - [ ] Write a complete README with functionnalities and how to execute the code
 - [ ] Generate some sentences using a LLM to understand how to use a word 
 - [ ] Add Unit test
-- [ ] Add CD/CI in order to manage modifications
 - [ ] Use airflow to call periodically the tasks : get data and send every hour a word with its translation. If the score of a word is high, this one has a lot of chance to be chosen to be sent for the user

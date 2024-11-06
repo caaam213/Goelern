@@ -1,7 +1,10 @@
 import os
+import sys
 from typing import Union
 
-from app.constants.mongo_constants import CONSTANTS_TABLE
+
+
+from constants.mongo_constants import CONSTANTS_TABLE
 from utils.utils_mongo.connection import create_client
 
 

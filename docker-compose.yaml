@@ -1,0 +1,48 @@
+services:
+  goelern:
+    image: goelern-etl:latest
+    volumes:
+      - ./app/airflow:/opt/airflow  
+      - ./app:/opt/  
+    ports:
+      - "8080:8080"  
+    command: airflow standalone  
+    environment:
+      - MONGO_HOST_DEV=mongodb  
+      - MONGO_PORT_DEV=27017
+      - MONGO_DB_DEV=goelerndb
+      - MONGO_CONN_ID=mongo_goelern
+    depends_on:
+      - mongodb  
+    networks:
+      - airflow-net
+
+  mongodb:
+    image: mongo:6.0  
+    environment:
+      - MONGO_INITDB_DATABASE=goelerndb  
+    ports:
+      - "27017:27017"  
+    volumes:
+      - mongo_data:/data/db
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js
+    networks:
+      - airflow-net
+
+  streamlit_app:
+    image: webapp:latest
+    ports:
+      - "8501:8501" 
+    volumes:
+      - .:/app  
+    environment:
+      - STREAMLIT_SERVER_PORT=8501
+      - STREAMLIT_SERVER_ENABLECORS=false
+    networks:
+      - airflow-net
+
+networks:
+  airflow-net:  
+
+volumes:
+  mongo_data:  

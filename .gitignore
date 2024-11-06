@@ -3,5 +3,7 @@ s3_credentials
 /sqllite_db
 /data
 artifacts
-__pycache__/
+__pycache__
 /code_archive
+/app/airflow/logs/*
+/app/airflow/data/*

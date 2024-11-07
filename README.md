@@ -42,13 +42,13 @@ The images are :
 ### App folder 
 This folder contains the pipeline to get data from https://fichesvocabulaire.com/ using Airflow.
 
-**create-urls DAG**
+**create-parameters DAG**
 
 Not created but the goal is to create parameters for the goelern-etl DAG. 
 The parameters are the targeted language and the URL.
 This pipeline will be composed of : 
-- reinitialise status : Reinitialise the status of the parameter each month so the parameter will be scrapable again
-- get_all_parameters : Get all parameters from a base url and store them in MongoDB.
+- reinitialise status : Reinitialise the status of the parameter each month so the parameter will be scrapable again (not implemented yet)
+- crawling_voc_list_urls : Class which contains functions to get urls, create parameters and store them.
 
 **goelern-etl DAG**
 
@@ -57,8 +57,20 @@ This DAG is a pipeline which uses those functions for now :
 - scrap_vocabulary : Extraction phase -> Contains functions to get data.
 
 ## Features
+### Get URLs of vocabularies list
+For now, it is possible to get the URLs of vocabulary lists to scrap words. Those URLs are stored in MONGODB in order for the goelern-etl pipeline to select 
+a data which has a WAITING status.
+Example of parameters which is stored in MONGODB :
+
+![parameter_scrap](/readme_images/parameter_scrap.png)
+
 ### Get words
-For now, you can get words using the goelern-etl DAG.
+For now, you can get words using the goelern-etl DAG. The data is for now saved on local file.
+When a URL is treated, its status is changed, so it can't be scraped again: 
+
+![parameter_scrap](/readme_images/treated.png)
+
+
 
  
 

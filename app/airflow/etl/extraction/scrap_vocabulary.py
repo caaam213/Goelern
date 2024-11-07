@@ -3,7 +3,6 @@ import logging
 import os
 import re
 import sys
-from typing import Dict, Optional, Union
 from urllib.parse import urlparse
 from bs4 import BeautifulSoup
 import requests
@@ -14,7 +13,7 @@ sys.path.insert(0, "/opt/airflow/etl")
 from extraction.abstract_request import AbstractRequest
 
 sys.path.insert(0, "/opt/")
-from utils.utils_mongo.operation_mongo import find_data
+from utils.utils_mongo.operation_mongo import find_data, update_data
 
 class ScrapVocabulary(AbstractRequest):
 
@@ -97,15 +96,16 @@ class ScrapVocabulary(AbstractRequest):
         Returns:
             list: list of words and their translations
         """
-        self.data_lang = find_data(mongo_hook, os.environ["MONGO_DB_DEV"], "constants", {"language": lang})
+        data_lang = find_data(mongo_hook, os.environ["MONGO_DB_DEV"], "constants", {"language": lang}, True)
+        logging.info(data_lang)
         
         # If data_lang is empty, return an empty list
-        if not self.data_lang:
+        if not data_lang:
             logging.error("No data found for the language")
             return []
     
-        base_name_col = self.data_lang.get("base_name_col")
-        trans_name_col = self.data_lang.get("translate_name_col")
+        base_name_col = data_lang.get("base_name_col")
+        trans_name_col = data_lang.get("translate_name_col")
 
         # Verify if url is valid
         if not self._verify_scrap_url(scrap_url):
@@ -130,5 +130,8 @@ class ScrapVocabulary(AbstractRequest):
     
         path_csv_file = f"/opt/airflow/data/goelern_{date}.csv"
         df_vocabularies.to_csv(path_csv_file, index=False)
-
+        
+        # Change the status of the data
+        update_data(mongo_hook, os.environ["MONGO_DB_DEV"], "parameters",{"scrap_url": scrap_url, "language":lang} ,{"status": "TREATED"})
+        
         return vocabulary_list

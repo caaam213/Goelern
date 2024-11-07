@@ -7,3 +7,6 @@ __pycache__
 /code_archive
 /app/airflow/logs/*
 /app/airflow/data/*
+/app/airflow/airflow.db
+/app/airflow/airflow-webserver.pid
+/app/airflow/standalone_admin_password.pid

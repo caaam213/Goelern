@@ -2,6 +2,7 @@
 db = db.getSiblingDB('goelerndb');
 db.createCollection("words");
 db.createCollection("constants");
+db.createCollection("parameters");
 db.constants.insertMany([
     {
         "language": "de",

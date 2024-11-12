@@ -10,10 +10,16 @@ import pandas as pd
 from airflow.providers.mongo.hooks.mongo import MongoHook
 
 sys.path.insert(0, "/opt/airflow/etl")
+
+
 from extraction.abstract_request import AbstractRequest
 
 sys.path.insert(0, "/opt/")
-from utils.utils_mongo.operation_mongo import find_data, update_data
+from utils.utils_files.s3_utils import save_data_on_s3
+from utils.utils_mongo.operation_mongo import add_data, find_data, update_data
+
+from constants.s3_constants import RAW_DATA, S3_BUCKET
+
 
 class ScrapVocabulary(AbstractRequest):
 
@@ -105,7 +111,7 @@ class ScrapVocabulary(AbstractRequest):
             return []
     
         base_name_col = data_lang.get("base_name_col")
-        trans_name_col = data_lang.get("translate_name_col")
+        trans_name_col = data_lang.get("trans_name_col")
 
         # Verify if url is valid
         if not self._verify_scrap_url(scrap_url):
@@ -132,6 +138,13 @@ class ScrapVocabulary(AbstractRequest):
         df_vocabularies.to_csv(path_csv_file, index=False)
         
         # Change the status of the data
-        update_data(mongo_hook, os.environ["MONGO_DB_DEV"], "parameters",{"scrap_url": scrap_url, "language":lang} ,{"status": "TREATED"})
+        update_data(mongo_hook, os.environ["MONGO_DB_DEV"], "parameters",{"scrap_url": scrap_url, "language":lang} ,{"status": "WAITING FOR PROCESSING"})
+        
+        # Save the data on S3
+        file_name = f"{RAW_DATA}/goelern_{date}.csv"
+        save_data_on_s3(S3_BUCKET, file_name, df_vocabularies.to_csv(index=False))
+        
+        # Add the file name to mongodb
+        add_data(mongo_hook, os.environ["MONGO_DB_DEV"], "raw_files", {"file_name": file_name,"status": "WAITING FOR PROCESSING", "lang":lang, "created_date":date, "scrap_url":scrap_url}, True)
         
         return vocabulary_list

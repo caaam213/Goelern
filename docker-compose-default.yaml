@@ -12,6 +12,8 @@ services:
       - MONGO_PORT_DEV=27017
       - MONGO_DB_DEV=goelerndb
       - MONGO_CONN_ID=mongo_goelern
+      - AWS_ACCESS_KEY_ID=
+      - AWS_SECRET_ACCESS_KEY=
     depends_on:
       - mongodb  
     networks:

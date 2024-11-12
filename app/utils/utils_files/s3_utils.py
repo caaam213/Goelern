@@ -4,10 +4,11 @@ from botocore.exceptions import NoCredentialsError
 import os
 
 
-def save_data_on_s3(file_name:str, data:Any)->bool:
+def save_data_on_s3(bucket:str, file_name:str, data:Any)->bool:
     """Save data on S3
 
     Args:
+        bucket (str): Bucket name to save the data
         file_name (str): File name to save the data
         data (Any): Data to be saved
 
@@ -27,9 +28,9 @@ def save_data_on_s3(file_name:str, data:Any)->bool:
         return False
 
     try:
-        object = s3.Object(os.environ["S3_BUCKET"], file_name)
+        object = s3.Object(bucket, file_name)
         res = object.put(Body=str(data))
-        print(f"Data saved to {os.environ['S3_BUCKET']}/{file_name}")
+        print(f"Data saved to {bucket}/{file_name}")
         return True
     except NoCredentialsError:
         print("Credentials not available")
@@ -38,10 +39,11 @@ def save_data_on_s3(file_name:str, data:Any)->bool:
         print(f"An error occurred: {e}")
         return False
 
-def get_data_from_s3(file_name:str)->Any:
+def get_data_from_s3(bucket:str, file_name:str)->Any:
     """Get data from S3 file
 
     Args:
+        bucket (str): Bucket name to get the data
         file_name (str): File name to get the data
 
     Returns:
@@ -53,9 +55,9 @@ def get_data_from_s3(file_name:str)->Any:
         aws_secret_access_key=os.environ["AWS_SECRET_ACCESS_KEY"],
     )
 
-    objects_list = s3.list_objects_v2(Bucket=os.environ["S3_BUCKET"]).get("Contents")
+    objects_list = s3.list_objects_v2(Bucket=bucket).get("Contents")
 
     for result in objects_list:
         if file_name in result["Key"]:
-            data = s3.get_object(Bucket=os.environ["S3_BUCKET"], Key=file_name)
+            data = s3.get_object(Bucket=bucket, Key=file_name)
             return data["Body"].read()

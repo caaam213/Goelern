@@ -9,4 +9,5 @@ __pycache__
 /app/airflow/data/*
 /app/airflow/airflow.db
 /app/airflow/airflow-webserver.pid
-/app/airflow/standalone_admin_password.pid
+/app/airflow/standalone_admin_password.txt
+docker-compose.yaml

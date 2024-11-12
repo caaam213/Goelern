@@ -23,7 +23,9 @@ Then, those data will be used to create a web interface to learn German.
     docker build --pull --rm -f "webapp\Dockerfile" -t webapp:latest "webapp"
 ```
 
-3. Execute the docker-compose file in order to activate the needed images. 
+3. Rename docker-compose-default.yaml to docker-compose.yaml and add amazonS3 Credentials
+
+4. Execute the docker-compose file in order to activate the needed images. 
 
 The images are : 
     

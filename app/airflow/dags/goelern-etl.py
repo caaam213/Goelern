@@ -6,10 +6,12 @@ from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
 
 sys.path.insert(0, "/opt/")
+
 from utils.utils_mongo.operation_mongo import create_connection, find_data
 
 sys.path.insert(0, "/opt/airflow/")
 from etl.extraction.scrap_vocabulary import ScrapVocabulary
+from etl.transformation.process_vocabulary import ProcessVocabulary
 
 default_args = {
     "owner": "airflow",
@@ -71,7 +73,13 @@ extraction_task = PythonOperator(
 )
 
 # Data transformation
+process_obj = ProcessVocabulary()
+process_data = PythonOperator(
+    task_id="process_data",
+    python_callable=process_obj.run,
+    op_kwargs={"mongo_hook": mongo_hook,},
+    dag=dag,
+)
 
 
-
-select_parameter >> extraction_task
+select_parameter >> extraction_task >> process_data

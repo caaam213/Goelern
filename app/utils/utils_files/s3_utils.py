@@ -39,25 +39,45 @@ def save_data_on_s3(bucket:str, file_name:str, data:Any)->bool:
         print(f"An error occurred: {e}")
         return False
 
-def get_data_from_s3(bucket:str, file_name:str)->Any:
-    """Get data from S3 file
+import os
+import boto3
+import logging
+from typing import Any, Optional
+
+def get_data_from_s3(bucket: str, file_name: str) -> Optional[Any]:
+    """Get data from a file in an S3 bucket.
 
     Args:
-        bucket (str): Bucket name to get the data
-        file_name (str): File name to get the data
+        bucket (str): The name of the S3 bucket.
+        file_name (str): The name of the file to retrieve.
 
     Returns:
-        Any: Content of the file
+        Optional[Any]: Content of the file if found, otherwise None.
     """
-    s3 = boto3.client(
-        "s3",
-        aws_access_key_id=os.environ["AWS_ACCESS_KEY_ID"],
-        aws_secret_access_key=os.environ["AWS_SECRET_ACCESS_KEY"],
-    )
+    try:
+        # Verify AWS credentials are set
+        if "AWS_ACCESS_KEY_ID" not in os.environ or "AWS_SECRET_ACCESS_KEY" not in os.environ:
+            logging.error("AWS credentials are not set in environment variables.")
+            return None
 
-    objects_list = s3.list_objects_v2(Bucket=bucket).get("Contents")
+        # Initialize the S3 client
+        s3 = boto3.client(
+            "s3",
+            aws_access_key_id=os.environ["AWS_ACCESS_KEY_ID"],
+            aws_secret_access_key=os.environ["AWS_SECRET_ACCESS_KEY"],
+        )
 
-    for result in objects_list:
-        if file_name in result["Key"]:
-            data = s3.get_object(Bucket=bucket, Key=file_name)
-            return data["Body"].read()
+        # Attempt to retrieve the file directly
+        try:
+            response = s3.get_object(Bucket=bucket, Key=file_name)
+            logging.info(f"File '{file_name}' successfully retrieved from '{bucket}' bucket.")
+            return response["Body"].read()
+        
+        except s3.exceptions.NoSuchKey:
+            logging.error(f"File '{file_name}' not found in bucket '{bucket}'.")
+            return None
+
+    except Exception as e:
+        logging.error(f"An error occurred while retrieving data from S3: {e}")
+        return None
+

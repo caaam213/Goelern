@@ -82,8 +82,12 @@ def update_data(mongo_hook: MongoHook, db_name: str, collection_name: str, query
 
         if update_one:
             result = collection.update_one(query_filter, {"$set": new_values})
+            if result.matched_count == 0:
+                logging.warning("No document matched the filter for update.")
         else:
             result = collection.update_many(query_filter, {"$set": new_values})
+            if result.matched_count == 0:
+                logging.warning("No documents matched the filter for update.")
             
         if result:
             logging.info(f"Document(s) updated in '{collection_name}'.")

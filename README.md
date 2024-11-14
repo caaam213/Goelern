@@ -46,7 +46,7 @@ This folder contains the pipeline to get data from https://fichesvocabulaire.com
 
 **create-parameters DAG**
 
-Not created but the goal is to create parameters for the goelern-etl DAG. 
+The goal is to create parameters for the goelern-etl DAG. 
 The parameters are the targeted language and the URL.
 This pipeline will be composed of : 
 - reinitialise status : Reinitialise the status of the parameter each month so the parameter will be scrapable again (not implemented yet)
@@ -57,6 +57,9 @@ This pipeline will be composed of :
 This DAG is a pipeline which uses those functions for now :
 - get_parameters : Not created yet. The goal is to select a parameter created by the create-urls DAG and 
 - scrap_vocabulary : Extraction phase -> Contains functions to get data.
+- process_vocabulary : Process the data to add the number of chars of a word, the similarity score between a word and its translation and its frequency of use score.
+- predict_difficulty : Task to attribute a level of difficulty for each word according to the number of chars and the similarity. For example, 'neu' is easier to learn than 'geheimnisvoll' because there are only 3 characters and looks like 'nouveau' in French. To define the level, I used a no-supervised algorithm approch by training a K-means model with the file [data.csv](app\airflow\data\data.csv) and creating a pipeline for the next predictions.
+**To be more accurate, the algorithm needs more data. For now, I chose to train the model with approximately 1000 words.**
 
 ## Features
 ### Get URLs of vocabularies list
@@ -67,7 +70,7 @@ Example of parameters which is stored in MONGODB :
 ![parameter_scrap](/readme_images/parameter_scrap.png)
 
 ### Get words
-For now, you can get words using the goelern-etl DAG. The data is for now saved on local file.
+For now, you can get words using the goelern-etl DAG. The data is for now saved on s3.
 When a URL is treated, its status is changed, so it can't be scraped again: 
 
 ![parameter_scrap](/readme_images/treated.png)
@@ -77,7 +80,9 @@ When a URL is treated, its status is changed, so it can't be scraped again:
  
 
 ## Future Enhancements
-- [ ] Finish the pipeline to transform and store data
+- [ ] Save words on MONGODB at the end of the DAG
+- [ ] Verify and clean the existing code
+- [ ] Rename difficulty_model.Pkl for each language
 - [ ] Create an interface where a user can create queries for airflow pipeline by providing the url and language to scrap 
 - [ ] Test with window functions and CTEs to practice. Those functions will be called using an API
 - [ ] Exercise : Chose a category and random word in French or German will be provided and we have to find its translation.

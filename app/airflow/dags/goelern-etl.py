@@ -7,11 +7,13 @@ from datetime import datetime, timedelta
 
 sys.path.insert(0, "/opt/")
 
+
 from utils.utils_mongo.operation_mongo import create_connection, find_data
 
 sys.path.insert(0, "/opt/airflow/")
 from etl.extraction.scrap_vocabulary import ScrapVocabulary
 from etl.transformation.process_vocabulary import ProcessVocabulary
+from etl.ml.predict_difficulty import PredictDifficulty
 
 default_args = {
     "owner": "airflow",
@@ -81,5 +83,13 @@ process_data = PythonOperator(
     dag=dag,
 )
 
+# Data transformation with AI
+ai_obj = PredictDifficulty()
+predict_difficulty = PythonOperator(
+    task_id="predict_difficulty",
+    python_callable=ai_obj.run,
+    op_kwargs={"mongo_hook": mongo_hook,},
+    dag=dag,
+)
 
-select_parameter >> extraction_task >> process_data
+select_parameter >> extraction_task >> process_data >> predict_difficulty

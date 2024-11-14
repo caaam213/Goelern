@@ -1,0 +1,966 @@
+french,german,Category,Number_char,Frequency,Similarity_score
+accepter,akzeptieren,liste_verbes_allemand,11,2.4e-05,0.36842109999999995
+acheter,kaufen,liste_verbes_allemand,6,0.000138,0.69230768
+aider,helfen,liste_verbes_allemand,6,0.000151,0.81818181
+aimer (d’amour),lieben,liste_verbes_allemand,6,7.41e-05,0.8095238
+"ajouter (un mot, une précision)",hinzufügen,liste_verbes_allemand,10,7.94e-06,0.90243903
+aller,gehen,liste_verbes_allemand,5,0.000447,0.8
+allumer,anzünden,liste_verbes_allemand,8,4.27e-06,0.7333333200000001
+appeler quelqu’un (au téléphone),anrufen,liste_verbes_allemand,7,1.95e-05,0.79487179
+apporter,mitbringen,liste_verbes_allemand,10,1.1e-05,0.77777778
+apprendre,lernen,liste_verbes_allemand,6,0.000138,0.6
+arrêter,stoppen,liste_verbes_allemand,7,2e-05,0.7142857
+arriver,ankommen,liste_verbes_allemand,8,1.23e-05,0.7333333200000001
+attendre (quelqu’un),warten,liste_verbes_allemand,6,0.000102,0.69230768
+avoir,haben,liste_verbes_allemand,5,0.00282,0.8
+avoir besoin,brauchen,liste_verbes_allemand,8,0.000145,0.7
+casser,brechen,liste_verbes_allemand,7,2.04e-05,0.8461538399999999
+changer,ändern,liste_verbes_allemand,6,8.51e-05,0.53846154
+chanter,singen,liste_verbes_allemand,6,3.63e-05,0.69230768
+chercher,suchen,liste_verbes_allemand,6,0.000151,0.57142857
+choisir,aussuchen,liste_verbes_allemand,9,9.33e-06,0.75
+commencer,beginnen / anfangen,liste_verbes_allemand,19,2.36e-05,0.78571428
+"comprendre (saisir, se rendre compte de)",verstehen,liste_verbes_allemand,9,0.000148,0.75510204
+compter (dénombrer),zählen,liste_verbes_allemand,6,4.27e-05,0.84
+conduire,fahren,liste_verbes_allemand,6,0.000158,0.7142857
+connaître,kennen,liste_verbes_allemand,6,0.000117,0.6
+continuer,fortsetzen,liste_verbes_allemand,10,6.92e-06,0.78947368
+"couper (matériau, cheveu)",schneiden,liste_verbes_allemand,9,2e-05,0.76470588
+courir (aller rapidement),rennen,liste_verbes_allemand,6,6.03e-05,0.80645162
+coûter,kosten,liste_verbes_allemand,6,0.000151,0.5
+croire,glauben,liste_verbes_allemand,7,0.000132,0.8461538399999999
+décider,entscheiden,liste_verbes_allemand,11,8.13e-05,0.55555555
+demander,fordern,liste_verbes_allemand,7,3.63e-05,0.6
+descendre (d’un moyen de transport ou des escaliers),hinuntergehen,liste_verbes_allemand,13,1.15e-07,0.81538461
+devenir,werden,liste_verbes_allemand,6,0.00309,0.53846154
+devoir,müssen / sollen,liste_verbes_allemand,15,0.000211,0.8095238
+dire,sagen,liste_verbes_allemand,5,0.000479,0.77777778
+donner,geben,liste_verbes_allemand,5,0.000398,0.81818181
+dormir,schlafen,liste_verbes_allemand,8,6.61e-05,1.0
+écouter,zuhören,liste_verbes_allemand,7,1.05e-05,0.7142857
+écrire,schreiben,liste_verbes_allemand,9,0.000178,0.6
+empêcher,verhindern,liste_verbes_allemand,10,5.75e-05,0.77777778
+entendre,hören,liste_verbes_allemand,5,0.000123,0.69230768
+entrer,eintreten,liste_verbes_allemand,9,9.33e-06,0.33333330000000005
+envoyer,schicken,liste_verbes_allemand,8,5.01e-05,0.7333333200000001
+essayer,ausprobieren,liste_verbes_allemand,12,1.45e-05,0.68421054
+éteindre,ausschalten,liste_verbes_allemand,11,5.89e-06,0.68421054
+être,sein,liste_verbes_allemand,4,0.00209,0.75
+exister,existieren,liste_verbes_allemand,10,2.24e-05,0.17647060000000003
+expliquer,erklären,liste_verbes_allemand,8,9.33e-05,0.76470588
+faire,machen,liste_verbes_allemand,6,0.000955,0.63636363
+faire la cuisine,kochen,liste_verbes_allemand,6,3.31e-05,0.81818181
+"fermer (porte, fenêtre, etc.)",schließen,liste_verbes_allemand,9,5.37e-05,0.84210527
+"finir, terminer",beenden,liste_verbes_allemand,7,2.4e-05,0.81818181
+gagner,gewinnen,liste_verbes_allemand,8,0.0001,0.57142857
+garder (conserver),behalten,liste_verbes_allemand,8,4.17e-05,0.8461538399999999
+jeter,werfen,liste_verbes_allemand,6,4.07e-05,0.63636363
+jouer,spielen,liste_verbes_allemand,7,0.000263,0.83333333
+laisser,lassen,liste_verbes_allemand,6,0.000575,0.2307692
+"laver, nettoyer","waschen, reinigen",liste_verbes_allemand,17,4.74e-06,0.6875
+lire,lesen,liste_verbes_allemand,5,0.00017,0.55555555
+manger,essen,liste_verbes_allemand,5,0.000214,0.81818181
+marcher,"gehen, laufen",liste_verbes_allemand,13,8.97e-05,0.8
+mettre,legen,liste_verbes_allemand,5,6.76e-05,0.63636363
+montrer,zeigen,liste_verbes_allemand,6,0.000195,0.8461538399999999
+oublier,vergessen,liste_verbes_allemand,9,0.000141,0.75
+ouvrir,öffnen,liste_verbes_allemand,6,4.27e-05,1.0
+parler,sprechen,liste_verbes_allemand,8,0.000135,0.57142857
+partir,weggehen,liste_verbes_allemand,8,2.69e-06,1.0
+payer,bezahlen,liste_verbes_allemand,8,5.75e-05,0.8461538399999999
+penser,denken,liste_verbes_allemand,6,0.00017,0.5
+perdre,verlieren,liste_verbes_allemand,9,6.31e-05,0.46666664
+permettre,ermöglichen,liste_verbes_allemand,11,2.88e-05,0.6
+pleurer (verser des larmes),weinen,liste_verbes_allemand,6,2.09e-05,0.878787875
+porter,tragen,liste_verbes_allemand,6,0.00011,0.66666666
+poser (mettre sur),aufsetzen,liste_verbes_allemand,9,4.17e-06,0.7037036999999999
+pouvoir,können,liste_verbes_allemand,6,0.00132,1.0
+prendre,nehmen,liste_verbes_allemand,6,0.000282,0.69230768
+préparer,vorbereiten,liste_verbes_allemand,11,1.35e-05,0.68421054
+rappeler,zurückrufen,liste_verbes_allemand,11,6.61e-07,0.78947368
+recevoir,empfangen,liste_verbes_allemand,9,2.04e-05,0.76470588
+reconnaître,erkennen,liste_verbes_allemand,8,8.13e-05,0.5789473700000001
+refuser,ablehnen,liste_verbes_allemand,8,8.71e-06,0.7333333200000001
+"regarder, voir","schauen, sehen",liste_verbes_allemand,14,7.69e-05,0.7142857
+rencontrer,treffen,liste_verbes_allemand,7,0.000178,0.6470587999999999
+rendre,zurückgeben,liste_verbes_allemand,11,5.25e-06,0.6470587999999999
+rentrer (à la maison),heimkehren,liste_verbes_allemand,10,5.01e-07,0.80645162
+répéter,wiederholen,liste_verbes_allemand,11,1.78e-05,0.77777778
+répondre,antworten,liste_verbes_allemand,9,6.46e-05,0.6470587999999999
+ressembler,ähneln,liste_verbes_allemand,6,3.55e-06,0.75
+rester,bleiben,liste_verbes_allemand,7,0.000234,0.69230768
+retourner,umdrehen,liste_verbes_allemand,8,4.17e-06,0.6470587999999999
+retrouver,wiederfinden,liste_verbes_allemand,12,3.24e-06,0.7142857
+réussir,gelingen,liste_verbes_allemand,8,1.26e-05,0.86666666
+"revenir (rentrer, retourner)",zurückkommen,liste_verbes_allemand,12,4.27e-06,0.85
+rire,lachen,liste_verbes_allemand,6,5.75e-05,0.8
+s’asseoir,sich setzen,liste_verbes_allemand,11,0.000123,0.7
+s’endormir,einschlafen,liste_verbes_allemand,11,5.89e-06,0.7142857
+savoir,wissen,liste_verbes_allemand,6,0.000355,0.83333333
+se laver (se nettoyer),sich waschen,liste_verbes_allemand,12,1.58e-05,0.6470587999999999
+se reposer (un moment),sich ausruhen,liste_verbes_allemand,13,4.26e-06,0.7142857
+se réveiller,aufwachen,liste_verbes_allemand,9,8.32e-06,0.9047619
+"se souvenir de quelqu’un, de quelque chose","sich an jn/etw erinnern, sich js/einer Sache entsinnen",liste_verbes_allemand,54,1.5e-07,0.75
+sortir (quitter un lieu),hinausgehen,liste_verbes_allemand,11,2.51e-06,0.8285714200000001
+suivre (qqun ou qque chose),jm/einer Sache folgen,liste_verbes_allemand,21,6.7e-07,0.70833334
+tenir,halten,liste_verbes_allemand,6,0.000219,0.45454543999999997
+tirer,ziehen,liste_verbes_allemand,6,0.000112,0.63636363
+tomber,herabfallen,liste_verbes_allemand,11,1.41e-07,0.76470588
+toucher (avec les mains),anfassen,liste_verbes_allemand,8,6.46e-06,0.8125
+tourner (en marchant ou en conduisant),abbiegen,liste_verbes_allemand,8,4.07e-06,0.86956522
+travailler,arbeiten,liste_verbes_allemand,8,0.000251,0.77777778
+trouver,finden,liste_verbes_allemand,6,0.000398,0.8461538399999999
+utiliser,benutzen,liste_verbes_allemand,8,4.68e-05,0.625
+vendre,verkaufen,liste_verbes_allemand,9,6.92e-05,0.46666664
+venir,kommen,liste_verbes_allemand,6,0.000513,0.63636363
+vivre,leben,liste_verbes_allemand,5,0.000724,0.8
+voir,sehen,liste_verbes_allemand,5,0.00049,1.0
+voler (dans le ciel),fliegen,liste_verbes_allemand,7,4.57e-05,0.77777778
+voler (dérober),stehlen,liste_verbes_allemand,7,6.76e-06,0.81818181
+vouloir,wollen,liste_verbes_allemand,6,0.000513,0.69230768
+accompagner,begleiten,liste_verbes_allemand_action_mouvements,9,1.95e-05,0.9
+accélérer,beschleunigen,liste_verbes_allemand_action_mouvements,13,6.17e-06,0.90909091
+aller,gehen,liste_verbes_allemand_action_mouvements,5,0.000447,0.8
+amener (quelque chose),mitbringen,liste_verbes_allemand_action_mouvements,10,1.1e-05,0.8125
+applaudir,applaudieren,liste_verbes_allemand_action_mouvements,12,1.07e-06,0.14285713
+arrêter,stoppen,liste_verbes_allemand_action_mouvements,7,2e-05,0.7142857
+arriver,ankommen,liste_verbes_allemand_action_mouvements,8,1.23e-05,0.7333333200000001
+atteindre / rejoindre,erreichen/sich anschließen,liste_verbes_allemand_action_mouvements,26,1.05e-05,0.78723404
+attraper,fangen,liste_verbes_allemand_action_mouvements,6,1.82e-05,0.7142857
+augmenter,zunehmen,liste_verbes_allemand_action_mouvements,8,4.57e-06,0.52941176
+avaler,Schlucken,liste_verbes_allemand_action_mouvements,9,6.76e-06,0.7333333200000001
+avancer,vorankommen,liste_verbes_allemand_action_mouvements,11,9.77e-07,0.55555555
+bailler,gähnen,liste_verbes_allemand_action_mouvements,6,8.91e-07,0.8461538399999999
+boire,trinken,liste_verbes_allemand_action_mouvements,7,5.75e-05,0.66666666
+bondir / sauter,springen,liste_verbes_allemand_action_mouvements,8,1.82e-05,0.82608695
+bouger / se déplacer,bewegen,liste_verbes_allemand_action_mouvements,7,4.27e-05,0.77777778
+casser / briser,brechen,liste_verbes_allemand_action_mouvements,7,2.04e-05,0.72727272
+chanter,singen,liste_verbes_allemand_action_mouvements,6,3.63e-05,0.69230768
+chercher / rechercher,suchen/suchen,liste_verbes_allemand_action_mouvements,13,7.57e-05,0.6470587999999999
+choisir,aussuchen,liste_verbes_allemand_action_mouvements,9,9.33e-06,0.75
+chuchoter,flüstern,liste_verbes_allemand_action_mouvements,8,1.95e-06,0.6470587999999999
+cligner des yeux,blinzeln,liste_verbes_allemand_action_mouvements,8,5.89e-07,0.66666666
+compter,sich verlassen,liste_verbes_allemand_action_mouvements,14,8.79e-05,0.7142857
+conduire,führen,liste_verbes_allemand_action_mouvements,6,0.000138,0.7142857
+construire,bauen,liste_verbes_allemand_action_mouvements,5,6.46e-05,0.7333333200000001
+courir,rennen,liste_verbes_allemand_action_mouvements,6,6.03e-05,0.83333333
+crier,schreien,liste_verbes_allemand_action_mouvements,8,1.58e-05,0.38461535999999996
+cuisiner,kochen,liste_verbes_allemand_action_mouvements,6,3.31e-05,0.7142857
+danser,tanzen,liste_verbes_allemand_action_mouvements,6,2.51e-05,0.5
+déplacer (quelque chose),bewegen (etwas),liste_verbes_allemand_action_mouvements,15,4.07e-05,0.69230768
+descendre,absteigen,liste_verbes_allemand_action_mouvements,9,2.75e-06,0.66666666
+donner,geben,liste_verbes_allemand_action_mouvements,5,0.000398,0.81818181
+donner un coup de pied,treten,liste_verbes_allemand_action_mouvements,6,5.01e-05,0.78571428
+dormir,schlafen,liste_verbes_allemand_action_mouvements,8,6.61e-05,1.0
+écarter,spreizen,liste_verbes_allemand_action_mouvements,8,3.72e-07,0.7333333200000001
+échapper,entkommen,liste_verbes_allemand_action_mouvements,9,8.71e-06,0.88235294
+écouter,"zuhören, hören",liste_verbes_allemand_action_mouvements,14,9.65e-06,0.8095238
+écrire,schreiben,liste_verbes_allemand_action_mouvements,9,0.000178,0.6
+embrasser,küssen,liste_verbes_allemand_action_mouvements,6,1.12e-05,0.6
+embrasser / faire un câlin / prendre dans ses bras,umarmen,liste_verbes_allemand_action_mouvements,7,3.89e-06,0.85964912
+emmener / prendre / emporter,mitnehmen,liste_verbes_allemand_action_mouvements,9,2.09e-05,0.78378378
+emporter,mitnehmen,liste_verbes_allemand_action_mouvements,9,2.09e-05,0.6470587999999999
+enseigner,lehren,liste_verbes_allemand_action_mouvements,6,1.15e-05,0.7333333200000001
+entrer,eintreten,liste_verbes_allemand_action_mouvements,9,9.33e-06,0.33333330000000005
+escalader / grimper,klettern/klettern,liste_verbes_allemand_action_mouvements,17,3.71e-06,0.66666666
+esquiver,ausweichen,liste_verbes_allemand_action_mouvements,10,5.89e-06,0.77777778
+faire un clin d’oeil,zwinkern,liste_verbes_allemand_action_mouvements,8,2.69e-07,0.78571428
+fermer,zusperren,liste_verbes_allemand_action_mouvements,9,3.31e-07,0.6
+flotter (sur l’eau),schwimmen,liste_verbes_allemand_action_mouvements,9,2.4e-05,0.85714285
+franchir (quelque chose),"Überschreiten, überqueren",liste_verbes_allemand_action_mouvements,25,2.93e-06,0.63265306
+frapper,schlagen,liste_verbes_allemand_action_mouvements,8,4.47e-05,0.7333333200000001
+glisser,gleiten,liste_verbes_allemand_action_mouvements,7,2.57e-06,0.57142857
+grimper,erklimmen,liste_verbes_allemand_action_mouvements,9,1.17e-06,0.75
+grossir,vergrößern,liste_verbes_allemand_action_mouvements,10,6.46e-06,0.6470587999999999
+hausser les épaules,zucken,liste_verbes_allemand_action_mouvements,6,2.69e-06,0.84
+hurler / crier,schreien,liste_verbes_allemand_action_mouvements,8,1.58e-05,0.63636363
+jeter,werfen,liste_verbes_allemand_action_mouvements,6,4.07e-05,0.63636363
+lancer,werfen,liste_verbes_allemand_action_mouvements,6,4.07e-05,0.66666666
+lécher,lecken,liste_verbes_allemand_action_mouvements,6,7.59e-06,0.66666666
+lire,lesen,liste_verbes_allemand_action_mouvements,5,0.00017,0.55555555
+mâcher,kauen,liste_verbes_allemand_action_mouvements,5,2.24e-06,0.81818181
+manger,essen,liste_verbes_allemand_action_mouvements,5,0.000214,0.81818181
+marcher,marschieren,liste_verbes_allemand_action_mouvements,11,4.68e-06,0.22222220000000004
+mordre,beißen,liste_verbes_allemand_action_mouvements,6,5.37e-06,0.83333333
+nager,schwimmen,liste_verbes_allemand_action_mouvements,9,2.4e-05,0.85714285
+ouvrir,öffnen,liste_verbes_allemand_action_mouvements,6,4.27e-05,1.0
+parler,sprechen,liste_verbes_allemand_action_mouvements,8,0.000135,0.57142857
+partir,abreisen,liste_verbes_allemand_action_mouvements,8,1e-06,0.57142857
+passer,verbringen,liste_verbes_allemand_action_mouvements,10,2.63e-05,0.75
+penser,denken,liste_verbes_allemand_action_mouvements,6,0.00017,0.5
+perdre du poids,abnehmen,liste_verbes_allemand_action_mouvements,8,1.58e-05,0.82608695
+pleurer,betrauern,liste_verbes_allemand_action_mouvements,9,2.82e-07,0.5
+plier,falten,liste_verbes_allemand_action_mouvements,6,5.89e-06,0.63636363
+plonger,eintauchen,liste_verbes_allemand_action_mouvements,10,2.19e-06,0.88235294
+porter,tragen,liste_verbes_allemand_action_mouvements,6,0.00011,0.66666666
+poursuivre,fortsetzen,liste_verbes_allemand_action_mouvements,10,6.92e-06,0.6
+pousser,drängen,liste_verbes_allemand_action_mouvements,7,8.91e-06,0.85714285
+prendre,nehmen,liste_verbes_allemand_action_mouvements,6,0.000282,0.69230768
+quitter,verlassen,liste_verbes_allemand_action_mouvements,9,8.91e-05,0.75
+ramasser,einsammeln,liste_verbes_allemand_action_mouvements,10,2.14e-06,0.66666666
+ramener / rapporter,zurückbringen,liste_verbes_allemand_action_mouvements,13,1.35e-06,0.8125
+ramper,kriechen,liste_verbes_allemand_action_mouvements,8,2.82e-06,0.7142857
+reculer,zurückweichen,liste_verbes_allemand_action_mouvements,13,4.07e-07,0.8
+regarder,zuschauen,liste_verbes_allemand_action_mouvements,9,6.17e-06,0.76470588
+renifler,schnüffeln,liste_verbes_allemand_action_mouvements,10,7.76e-07,0.66666666
+réparer,reparieren,liste_verbes_allemand_action_mouvements,10,7.41e-06,0.2941176
+répéter,wiederholen,liste_verbes_allemand_action_mouvements,11,1.78e-05,0.77777778
+respirer,atmen,liste_verbes_allemand_action_mouvements,5,1.07e-05,0.8461538399999999
+rêver,träumen,liste_verbes_allemand_action_mouvements,7,1.86e-05,0.66666666
+rire,lachen,liste_verbes_allemand_action_mouvements,6,5.75e-05,0.8
+rouler,rollen,liste_verbes_allemand_action_mouvements,6,3.16e-05,0.33333330000000005
+s’accroupir,"sich ducken, Hocken",liste_verbes_allemand_action_mouvements,19,3.59e-07,0.86666666
+s’allonger,sich hinlegen,liste_verbes_allemand_action_mouvements,13,3.23e-06,0.6521739
+s’approcher,sich nähern,liste_verbes_allemand_action_mouvements,11,6.45e-06,0.54545453
+s’asseoir,sich hinsetzen,liste_verbes_allemand_action_mouvements,14,2.69e-06,0.73913044
+s’éloigner,sich entfernen,liste_verbes_allemand_action_mouvements,14,2.28e-05,0.58333334
+s’étendre / s’étaler,sich ausbreiten,liste_verbes_allemand_action_mouvements,15,3.09e-06,0.77142857
+s’évader,ausbrechen,liste_verbes_allemand_action_mouvements,10,2.69e-06,0.77777778
+sauter,springen,liste_verbes_allemand_action_mouvements,8,1.82e-05,0.7142857
+se coucher,sich hinlegen,liste_verbes_allemand_action_mouvements,13,3.23e-06,0.6521739
+se doucher / prendre une douche,duschen,liste_verbes_allemand_action_mouvements,7,1.1e-05,0.68421054
+se garer,parken,liste_verbes_allemand_action_mouvements,6,9.33e-06,0.57142857
+se lever,aufstehen,liste_verbes_allemand_action_mouvements,9,1.7e-05,0.6470587999999999
+se mettre à genoux / s’agenouiller,knien,liste_verbes_allemand_action_mouvements,5,4.37e-06,0.897435896
+se retourner,sich umdrehen,liste_verbes_allemand_action_mouvements,13,4.17e-06,0.6
+secouer,schütteln,liste_verbes_allemand_action_mouvements,9,6.46e-06,0.625
+sentir,riechen,liste_verbes_allemand_action_mouvements,7,7.24e-06,0.69230768
+siffler,pfeifen,liste_verbes_allemand_action_mouvements,7,5.62e-06,0.57142857
+sortir,herauskommen,liste_verbes_allemand_action_mouvements,12,2.57e-06,0.88888889
+souffler,blasen,liste_verbes_allemand_action_mouvements,6,1.26e-05,0.7142857
+soulever,heben,liste_verbes_allemand_action_mouvements,5,1.32e-05,0.69230768
+suer / transpirer,schwitzen,liste_verbes_allemand_action_mouvements,9,5.89e-06,0.7692307700000001
+suivre (quelqu’un),folgen,liste_verbes_allemand_action_mouvements,6,0.000151,0.83333333
+tirer,ziehen,liste_verbes_allemand_action_mouvements,6,0.000112,0.63636363
+tomber,herabfallen,liste_verbes_allemand_action_mouvements,11,1.41e-07,0.76470588
+toucher,berühren,liste_verbes_allemand_action_mouvements,8,1.1e-05,0.7333333200000001
+tourner,drehen,liste_verbes_allemand_action_mouvements,6,3.39e-05,0.69230768
+traîner,schleppen,liste_verbes_allemand_action_mouvements,9,3.89e-06,0.875
+travailler,arbeiten,liste_verbes_allemand_action_mouvements,8,0.000251,0.77777778
+venir,kommen,liste_verbes_allemand_action_mouvements,6,0.000513,0.63636363
+verser (de l’eau),gießen,liste_verbes_allemand_action_mouvements,6,1.45e-05,0.82608695
+visiter,besuchen,liste_verbes_allemand_action_mouvements,8,4.68e-05,0.86666666
+voir,sehen,liste_verbes_allemand_action_mouvements,5,0.00049,1.0
+voler (dans le ciel),fliegen,liste_verbes_allemand_action_mouvements,7,4.57e-05,0.77777778
+voler (quelque chose),stehlen,liste_verbes_allemand_action_mouvements,7,6.76e-06,0.85714285
+accueillant,gastfreundlich,liste_vocabulaire_allemand_adjectifs_essentiels,14,6.03e-07,0.84
+admirable,bewundernswert,liste_vocabulaire_allemand_adjectifs_essentiels,14,1.45e-06,0.82608695
+agacé,gereizt,liste_vocabulaire_allemand_adjectifs_essentiels,7,3.09e-06,0.83333333
+âgé,alt,liste_vocabulaire_allemand_adjectifs_essentiels,3,0.000145,1.0
+agréable,angenehm,liste_vocabulaire_allemand_adjectifs_essentiels,8,1.91e-05,0.625
+aimable,freundlich,liste_vocabulaire_allemand_adjectifs_essentiels,10,2.75e-05,0.88235294
+amer,bitter,liste_vocabulaire_allemand_adjectifs_essentiels,6,1.15e-05,0.6
+amical,freundlich,liste_vocabulaire_allemand_adjectifs_essentiels,10,2.75e-05,0.75
+amusant,lustig,liste_vocabulaire_allemand_adjectifs_essentiels,6,6.92e-05,0.53846154
+ancien,antik,liste_vocabulaire_allemand_adjectifs_essentiels,5,1.17e-06,0.45454543999999997
+approximatif,annähernd,liste_vocabulaire_allemand_adjectifs_essentiels,9,1.17e-05,0.8095238
+attentif,aufmerksam,liste_vocabulaire_allemand_adjectifs_essentiels,10,3.31e-05,0.77777778
+automatique,automatisch,liste_vocabulaire_allemand_adjectifs_essentiels,11,3.8e-05,0.27272725
+banal,banal,liste_vocabulaire_allemand_adjectifs_essentiels,5,1.78e-06,0.0
+bas,niedrig,liste_vocabulaire_allemand_adjectifs_essentiels,7,1.41e-05,1.0
+"beau, bel, belle",schön,liste_vocabulaire_allemand_adjectifs_essentiels,5,0.000331,1.0
+beaucoup,viel,liste_vocabulaire_allemand_adjectifs_essentiels,4,0.001,0.83333333
+"bête, stupide",dumm,liste_vocabulaire_allemand_adjectifs_essentiels,4,5.75e-05,0.88235294
+bien,gut,liste_vocabulaire_allemand_adjectifs_essentiels,3,0.00123,1.0
+bizarre,seltsam,liste_vocabulaire_allemand_adjectifs_essentiels,7,2e-05,0.85714285
+blessé,verletzt,liste_vocabulaire_allemand_adjectifs_essentiels,8,6.76e-05,0.7142857
+bon,gut,liste_vocabulaire_allemand_adjectifs_essentiels,3,0.00123,1.0
+bon marché,billig,liste_vocabulaire_allemand_adjectifs_essentiels,6,1.82e-05,0.875
+bouché,verstopft,liste_vocabulaire_allemand_adjectifs_essentiels,9,2.19e-06,0.86666666
+bronzé,braungebrannt,liste_vocabulaire_allemand_adjectifs_essentiels,13,1.32e-07,0.68421054
+brusque,abrupt,liste_vocabulaire_allemand_adjectifs_essentiels,6,2.34e-06,0.53846154
+bruyant,laut,liste_vocabulaire_allemand_adjectifs_essentiels,4,0.00017,0.63636363
+calme,Ruhig,liste_vocabulaire_allemand_adjectifs_essentiels,5,5.75e-05,1.0
+capable,fähig,liste_vocabulaire_allemand_adjectifs_essentiels,5,1.15e-05,1.0
+captivant,fesselnd,liste_vocabulaire_allemand_adjectifs_essentiels,8,7.24e-07,0.88235294
+caractériel,"verhaltensgestört, charakterlich",liste_vocabulaire_allemand_adjectifs_essentiels,32,4.69e-08,0.6744186
+carré,quadratisch,liste_vocabulaire_allemand_adjectifs_essentiels,11,1.23e-06,0.75
+cassé,"kaputt, gebrochen",liste_vocabulaire_allemand_adjectifs_essentiels,17,1.17e-05,0.90909091
+catastrophique,katastrophal,liste_vocabulaire_allemand_adjectifs_essentiels,12,2.29e-06,0.30769230000000003
+célèbre,berühmt,liste_vocabulaire_allemand_adjectifs_essentiels,7,1.1e-05,0.7142857
+chaleureux,warmherzig,liste_vocabulaire_allemand_adjectifs_essentiels,10,4.27e-07,0.7
+chanceux,glücklich,liste_vocabulaire_allemand_adjectifs_essentiels,9,7.76e-05,0.76470588
+charmant,charmant,liste_vocabulaire_allemand_adjectifs_essentiels,8,4.17e-06,0.0
+chaud,heiß,liste_vocabulaire_allemand_adjectifs_essentiels,4,4.07e-05,0.77777778
+cher,teuer,liste_vocabulaire_allemand_adjectifs_essentiels,5,3.72e-05,0.55555555
+clair,klar,liste_vocabulaire_allemand_adjectifs_essentiels,4,0.000363,0.33333330000000005
+classique,klassisch,liste_vocabulaire_allemand_adjectifs_essentiels,9,8.51e-06,0.44444439999999996
+collant,klebrig,liste_vocabulaire_allemand_adjectifs_essentiels,7,1.02e-06,0.85714285
+coloré,farbig,liste_vocabulaire_allemand_adjectifs_essentiels,6,2.57e-06,0.83333333
+comestible,essbar,liste_vocabulaire_allemand_adjectifs_essentiels,6,1.1e-06,0.625
+commercial,kommerziell,liste_vocabulaire_allemand_adjectifs_essentiels,11,2.14e-06,0.33333330000000005
+commun,gemeinsam,liste_vocabulaire_allemand_adjectifs_essentiels,9,0.000126,0.7333333200000001
+compact,kompakt,liste_vocabulaire_allemand_adjectifs_essentiels,7,4.68e-06,0.28571427000000005
+compatissant,mitfühlend,liste_vocabulaire_allemand_adjectifs_essentiels,10,5.62e-07,0.72727272
+complet,vollständig,liste_vocabulaire_allemand_adjectifs_essentiels,11,4.68e-05,0.66666666
+complexe,komplex,liste_vocabulaire_allemand_adjectifs_essentiels,7,1.35e-05,0.19999999999999996
+confiant,zuversichtlich,liste_vocabulaire_allemand_adjectifs_essentiels,14,4.37e-06,0.81818181
+confortable,komfortabel,liste_vocabulaire_allemand_adjectifs_essentiels,11,2e-06,0.27272725
+content,froh,liste_vocabulaire_allemand_adjectifs_essentiels,4,6.17e-05,0.81818181
+convaincant,überzeugend,liste_vocabulaire_allemand_adjectifs_essentiels,11,8.13e-06,0.90909091
+convenable,geeignet,liste_vocabulaire_allemand_adjectifs_essentiels,8,3.31e-05,0.77777778
+convivial,benutzerfreundlich,liste_vocabulaire_allemand_adjectifs_essentiels,18,1.91e-07,0.85185185
+"correct, bon","korrekt, okay",liste_vocabulaire_allemand_adjectifs_essentiels,13,1.77e-05,0.36
+coupable,schuldig,liste_vocabulaire_allemand_adjectifs_essentiels,8,1.7e-05,0.625
+courageux,mutig,liste_vocabulaire_allemand_adjectifs_essentiels,5,9.77e-06,0.7142857
+court,kurz,liste_vocabulaire_allemand_adjectifs_essentiels,4,0.000269,0.55555555
+crédible,glaubwürdig,liste_vocabulaire_allemand_adjectifs_essentiels,11,4.17e-06,0.68421054
+croyant,gläubig,liste_vocabulaire_allemand_adjectifs_essentiels,7,1.7e-06,1.0
+culturel,kulturell,liste_vocabulaire_allemand_adjectifs_essentiels,9,4.57e-06,0.17647060000000003
+curieux,neugierig,liste_vocabulaire_allemand_adjectifs_essentiels,9,1.41e-05,0.75
+dangereux,gefährlich,liste_vocabulaire_allemand_adjectifs_essentiels,10,3.98e-05,0.68421054
+dégoûtant,ekelhaft,liste_vocabulaire_allemand_adjectifs_essentiels,8,6.46e-06,0.76470588
+dégoûté,angeekelt,liste_vocabulaire_allemand_adjectifs_essentiels,9,3.98e-07,0.75
+délectable,köstlich,liste_vocabulaire_allemand_adjectifs_essentiels,8,4.79e-06,0.77777778
+"délicieux, délicieuse",köstlich,liste_vocabulaire_allemand_adjectifs_essentiels,8,4.79e-06,0.79310344
+démocratique,demokratisch,liste_vocabulaire_allemand_adjectifs_essentiels,12,6.76e-06,0.41666669999999995
+déprimé,deprimiert,liste_vocabulaire_allemand_adjectifs_essentiels,10,1.35e-06,0.4117647
+dernier,letzter,liste_vocabulaire_allemand_adjectifs_essentiels,7,5.01e-05,0.7142857
+désagréable,unangenehm,liste_vocabulaire_allemand_adjectifs_essentiels,10,1.29e-05,0.7142857
+déterminé,bestimmt,liste_vocabulaire_allemand_adjectifs_essentiels,8,0.000174,0.76470588
+différent,andersartig,liste_vocabulaire_allemand_adjectifs_essentiels,11,1.66e-07,0.8
+difficile,schwierig,liste_vocabulaire_allemand_adjectifs_essentiels,9,4.9e-05,0.66666666
+disparu,verschollen,liste_vocabulaire_allemand_adjectifs_essentiels,11,2.4e-06,0.88888889
+divers,verschiedenartig,liste_vocabulaire_allemand_adjectifs_essentiels,16,1.23e-07,0.63636363
+doué,begabt,liste_vocabulaire_allemand_adjectifs_essentiels,6,2.09e-06,1.0
+doux,sanft,liste_vocabulaire_allemand_adjectifs_essentiels,5,1.02e-05,1.0
+drôle,witzig,liste_vocabulaire_allemand_adjectifs_essentiels,6,3.39e-05,1.0
+dur,hart,liste_vocabulaire_allemand_adjectifs_essentiels,4,7.76e-05,0.7142857
+dynamique,dynamisch,liste_vocabulaire_allemand_adjectifs_essentiels,9,3.02e-06,0.33333330000000005
+éblouissant,blendend,liste_vocabulaire_allemand_adjectifs_essentiels,8,1.55e-06,0.68421054
+écologique,ökologisch,liste_vocabulaire_allemand_adjectifs_essentiels,10,4.17e-06,0.5
+économique,ökonomisch,liste_vocabulaire_allemand_adjectifs_essentiels,10,4.07e-06,0.5
+efficace,wirkungsvoll,liste_vocabulaire_allemand_adjectifs_essentiels,12,1.82e-06,0.9
+effrayant,beängstigend,liste_vocabulaire_allemand_adjectifs_essentiels,12,2.75e-06,0.7142857
+égoïste,egoistisch,liste_vocabulaire_allemand_adjectifs_essentiels,10,3.02e-06,0.52941176
+électrique,elektrisch,liste_vocabulaire_allemand_adjectifs_essentiels,10,5.37e-06,0.5
+électronique,elektronisch,liste_vocabulaire_allemand_adjectifs_essentiels,12,2.95e-06,0.41666669999999995
+élégant,elegant,liste_vocabulaire_allemand_adjectifs_essentiels,7,6.03e-06,0.28571427000000005
+éloigné,entfernt,liste_vocabulaire_allemand_adjectifs_essentiels,8,9.12e-05,0.86666666
+émouvant,bewegend,liste_vocabulaire_allemand_adjectifs_essentiels,8,1e-06,0.875
+encombrant,sperrig,liste_vocabulaire_allemand_adjectifs_essentiels,7,5.13e-07,0.76470588
+énergique,energisch,liste_vocabulaire_allemand_adjectifs_essentiels,9,2.57e-06,0.44444439999999996
+énervé,aufgebracht,liste_vocabulaire_allemand_adjectifs_essentiels,11,6.31e-06,0.76470588
+ennuyant,langweilig,liste_vocabulaire_allemand_adjectifs_essentiels,10,2.63e-05,0.77777778
+ennuyé,gelangweilt,liste_vocabulaire_allemand_adjectifs_essentiels,11,2.88e-06,0.76470588
+énorme,riesig,liste_vocabulaire_allemand_adjectifs_essentiels,6,1.1e-05,0.66666666
+ensemble,zusammen,liste_vocabulaire_allemand_adjectifs_essentiels,8,0.000355,0.75
+enthousiaste,begeisterter,liste_vocabulaire_allemand_adjectifs_essentiels,12,1.7e-06,0.58333334
+entier,ganz,liste_vocabulaire_allemand_adjectifs_essentiels,4,0.000955,0.8
+épais,dick,liste_vocabulaire_allemand_adjectifs_essentiels,4,2.57e-05,0.77777778
+épicé,würzig,liste_vocabulaire_allemand_adjectifs_essentiels,6,7.41e-07,0.81818181
+épouvantable,entsetzlich,liste_vocabulaire_allemand_adjectifs_essentiels,11,1.74e-06,0.73913044
+équivalent,gleichwertig,liste_vocabulaire_allemand_adjectifs_essentiels,12,2.51e-06,0.72727272
+étonné,erstaunt,liste_vocabulaire_allemand_adjectifs_essentiels,8,9.33e-06,0.7142857
+étrange,merkwürdig,liste_vocabulaire_allemand_adjectifs_essentiels,10,1.2e-05,0.88235294
+étroit,eng,liste_vocabulaire_allemand_adjectifs_essentiels,3,3.72e-05,1.0
+évident,offensichtlich,liste_vocabulaire_allemand_adjectifs_essentiels,14,5.37e-05,0.7142857
+exact,richtig,liste_vocabulaire_allemand_adjectifs_essentiels,7,0.00038,0.66666666
+exaltant,aufregend,liste_vocabulaire_allemand_adjectifs_essentiels,9,4.27e-06,0.76470588
+exaspéré,verärgert,liste_vocabulaire_allemand_adjectifs_essentiels,9,5.37e-06,0.76470588
+excellent,ausgezeichnet,liste_vocabulaire_allemand_adjectifs_essentiels,13,3.47e-05,0.63636363
+exceptionnel,außergewöhnlich,liste_vocabulaire_allemand_adjectifs_essentiels,15,6.46e-06,0.7037036999999999
+excité,aufgeregt,liste_vocabulaire_allemand_adjectifs_essentiels,9,1.62e-05,0.7333333200000001
+excusable,entschuldbar,liste_vocabulaire_allemand_adjectifs_essentiels,12,1.95e-07,0.7142857
+exemplaire,exemplarisch,liste_vocabulaire_allemand_adjectifs_essentiels,12,2.51e-06,0.27272725
+facile,leicht,liste_vocabulaire_allemand_adjectifs_essentiels,6,0.000174,0.66666666
+faible,schwach,liste_vocabulaire_allemand_adjectifs_essentiels,7,2.69e-05,0.8461538399999999
+fatigant,ermüdend,liste_vocabulaire_allemand_adjectifs_essentiels,8,1.02e-06,0.875
+fatigué,müde,liste_vocabulaire_allemand_adjectifs_essentiels,4,3.16e-05,1.0
+faux_,falsch,liste_vocabulaire_allemand_adjectifs_essentiels,6,0.000105,0.63636363
+fermé,geschlossen,liste_vocabulaire_allemand_adjectifs_essentiels,11,5.25e-05,0.875
+fiable,zuverlässig,liste_vocabulaire_allemand_adjectifs_essentiels,11,8.32e-06,0.88235294
+formidable,großartig,liste_vocabulaire_allemand_adjectifs_essentiels,9,3.55e-05,0.78947368
+fort,stark,liste_vocabulaire_allemand_adjectifs_essentiels,5,0.000191,0.77777778
+"fou, folle",verrückt,liste_vocabulaire_allemand_adjectifs_essentiels,8,2.34e-05,0.88888889
+fragile,zerbrechlich,liste_vocabulaire_allemand_adjectifs_essentiels,12,9.77e-07,0.89473684
+frais,frisch,liste_vocabulaire_allemand_adjectifs_essentiels,6,3.8e-05,0.27272725
+fréquent,häufig,liste_vocabulaire_allemand_adjectifs_essentiels,6,0.000105,0.85714285
+froid,kalt,liste_vocabulaire_allemand_adjectifs_essentiels,4,3.63e-05,1.0
+furieux,wütend,liste_vocabulaire_allemand_adjectifs_essentiels,6,1.48e-05,0.8461538399999999
+généreux,großzügig,liste_vocabulaire_allemand_adjectifs_essentiels,9,8.13e-06,0.76470588
+gentil,nett,liste_vocabulaire_allemand_adjectifs_essentiels,4,5.01e-05,0.6
+gigantesque,riesig,liste_vocabulaire_allemand_adjectifs_essentiels,6,1.1e-05,0.6470587999999999
+grand,groß,liste_vocabulaire_allemand_adjectifs_essentiels,4,0.000162,0.55555555
+"gros, grosse",fett,liste_vocabulaire_allemand_adjectifs_essentiels,4,2.69e-05,0.875
+haut,Hoch,liste_vocabulaire_allemand_adjectifs_essentiels,4,0.000191,0.75
+heureux,glücklich,liste_vocabulaire_allemand_adjectifs_essentiels,9,7.76e-05,0.875
+historique,historisch,liste_vocabulaire_allemand_adjectifs_essentiels,10,1.82e-05,0.30000000000000004
+honnête,ehrlich,liste_vocabulaire_allemand_adjectifs_essentiels,7,7.94e-05,0.85714285
+horrible,entsetzlich,liste_vocabulaire_allemand_adjectifs_essentiels,11,1.74e-06,0.89473684
+"humide, mouillé","feucht, nass",liste_vocabulaire_allemand_adjectifs_essentiels,12,5.52e-06,0.77777778
+idéal,ideal,liste_vocabulaire_allemand_adjectifs_essentiels,5,1.62e-05,0.19999999999999996
+identique,identisch,liste_vocabulaire_allemand_adjectifs_essentiels,9,1.1e-05,0.33333330000000005
+idiot,dumm,liste_vocabulaire_allemand_adjectifs_essentiels,4,5.75e-05,0.77777778
+illégal,rechtswidrig,liste_vocabulaire_allemand_adjectifs_essentiels,12,3.63e-06,0.78947368
+illimité,unbeschränkt,liste_vocabulaire_allemand_adjectifs_essentiels,12,9.55e-07,0.9
+immédiat,unmittelbar,liste_vocabulaire_allemand_adjectifs_essentiels,11,3.72e-05,0.68421054
+immense,riesig,liste_vocabulaire_allemand_adjectifs_essentiels,6,1.1e-05,0.53846154
+immobile,unbeweglich,liste_vocabulaire_allemand_adjectifs_essentiels,11,5.5e-07,0.78947368
+impliqué,involviert,liste_vocabulaire_allemand_adjectifs_essentiels,10,4.47e-06,0.66666666
+important,bedeutend,liste_vocabulaire_allemand_adjectifs_essentiels,9,5.89e-06,0.77777778
+impossible,unmöglich,liste_vocabulaire_allemand_adjectifs_essentiels,9,4.68e-05,0.78947368
+impressionnant,eindrucksvoll,liste_vocabulaire_allemand_adjectifs_essentiels,13,4.79e-06,0.77777778
+imprévisible,unvorhersehbar,liste_vocabulaire_allemand_adjectifs_essentiels,14,5.37e-07,0.8461538399999999
+incapable,unfähig,liste_vocabulaire_allemand_adjectifs_essentiels,7,5.89e-06,0.875
+inconnu,unbekannt,liste_vocabulaire_allemand_adjectifs_essentiels,9,1.95e-05,0.625
+incroyable,unglaublich,liste_vocabulaire_allemand_adjectifs_essentiels,11,5.37e-05,0.6190476
+indépendant,selbstständig,liste_vocabulaire_allemand_adjectifs_essentiels,13,1e-05,0.83333333
+injuste,ungerecht,liste_vocabulaire_allemand_adjectifs_essentiels,9,6.31e-06,0.75
+innocent,unschuldig,liste_vocabulaire_allemand_adjectifs_essentiels,10,8.32e-06,0.77777778
+inquiet,besorgt,liste_vocabulaire_allemand_adjectifs_essentiels,7,1.78e-05,0.7142857
+insignifiant,unbedeutend,liste_vocabulaire_allemand_adjectifs_essentiels,11,2.24e-06,0.82608695
+insuffisant,unzureichend,liste_vocabulaire_allemand_adjectifs_essentiels,12,4.79e-06,0.82608695
+insupportable,unerträglich,liste_vocabulaire_allemand_adjectifs_essentiels,12,6.46e-06,0.6799999999999999
+intelligent,intelligent,liste_vocabulaire_allemand_adjectifs_essentiels,11,8.13e-06,0.0
+intenable,unhaltbar,liste_vocabulaire_allemand_adjectifs_essentiels,9,1.86e-06,0.66666666
+interdit,verboten,liste_vocabulaire_allemand_adjectifs_essentiels,8,3.98e-05,0.625
+intéressant,interessant,liste_vocabulaire_allemand_adjectifs_essentiels,11,6.31e-05,0.09090905999999999
+international,international,liste_vocabulaire_allemand_adjectifs_essentiels,13,4.79e-05,0.0
+inventif,"erfinderisch, kreativ",liste_vocabulaire_allemand_adjectifs_essentiels,21,5.11e-07,0.6551724
+irrésistible,unwiderstehlich,liste_vocabulaire_allemand_adjectifs_essentiels,15,1.38e-06,0.62962964
+jaloux,eifersüchtig,liste_vocabulaire_allemand_adjectifs_essentiels,12,3.89e-06,1.0
+jeune,jung,liste_vocabulaire_allemand_adjectifs_essentiels,4,5.01e-05,0.33333330000000005
+joueur,verspielt,liste_vocabulaire_allemand_adjectifs_essentiels,9,3.98e-06,0.7333333200000001
+lâche,feige,liste_vocabulaire_allemand_adjectifs_essentiels,5,5.5e-06,0.8
+large,breit,liste_vocabulaire_allemand_adjectifs_essentiels,5,3.55e-05,0.6
+légal,legal,liste_vocabulaire_allemand_adjectifs_essentiels,5,1.12e-05,0.19999999999999996
+léger,leicht,liste_vocabulaire_allemand_adjectifs_essentiels,6,0.000174,0.63636363
+lent,langsam,liste_vocabulaire_allemand_adjectifs_essentiels,7,0.000115,0.63636363
+local,örtlich,liste_vocabulaire_allemand_adjectifs_essentiels,7,2.45e-06,0.66666666
+loin,weit,liste_vocabulaire_allemand_adjectifs_essentiels,4,0.000251,0.75
+long,lang,liste_vocabulaire_allemand_adjectifs_essentiels,4,0.000214,0.25
+louable,lobenswert,liste_vocabulaire_allemand_adjectifs_essentiels,10,9.33e-07,0.52941176
+lourd,schwer,liste_vocabulaire_allemand_adjectifs_essentiels,6,0.000195,0.81818181
+magnifique,herrlich,liste_vocabulaire_allemand_adjectifs_essentiels,8,1.45e-05,0.88888889
+malade,krank,liste_vocabulaire_allemand_adjectifs_essentiels,5,4.9e-05,0.81818181
+maladroit,ungeschickt,liste_vocabulaire_allemand_adjectifs_essentiels,11,2.19e-06,0.8
+malheureux,unglücklich,liste_vocabulaire_allemand_adjectifs_essentiels,11,1.12e-05,0.9047619
+mauvais,schlecht,liste_vocabulaire_allemand_adjectifs_essentiels,8,0.000135,0.86666666
+méchant,bösartig,liste_vocabulaire_allemand_adjectifs_essentiels,8,1.45e-06,0.7333333200000001
+méfiant,misstrauisch,liste_vocabulaire_allemand_adjectifs_essentiels,12,3.47e-06,0.68421054
+merveilleux,wunderbar,liste_vocabulaire_allemand_adjectifs_essentiels,9,2.88e-05,0.8
+"mignon, mignonne",niedlich,liste_vocabulaire_allemand_adjectifs_essentiels,8,5.13e-06,0.75
+minable,lausig,liste_vocabulaire_allemand_adjectifs_essentiels,6,1.95e-07,0.8461538399999999
+mince,dünn,liste_vocabulaire_allemand_adjectifs_essentiels,4,1.23e-05,0.77777778
+"minuscule, infime",winzig,liste_vocabulaire_allemand_adjectifs_essentiels,6,2.4e-06,0.73913044
+moderne,modern,liste_vocabulaire_allemand_adjectifs_essentiels,6,1.74e-05,0.07692310000000002
+moelleux,weich,liste_vocabulaire_allemand_adjectifs_essentiels,5,1.12e-05,0.8461538399999999
+mondial,weltweit,liste_vocabulaire_allemand_adjectifs_essentiels,8,6.03e-05,0.86666666
+mort,tot,liste_vocabulaire_allemand_adjectifs_essentiels,3,5.62e-05,0.7142857
+mortel,sterblich,liste_vocabulaire_allemand_adjectifs_essentiels,9,4.57e-07,0.6
+motivé,motiviert,liste_vocabulaire_allemand_adjectifs_essentiels,9,1.29e-05,0.33333330000000005
+mouillé,nass,liste_vocabulaire_allemand_adjectifs_essentiels,4,1.35e-05,1.0
+moyen,mittelmäßig,liste_vocabulaire_allemand_adjectifs_essentiels,11,1.35e-06,0.75
+muet,stumm,liste_vocabulaire_allemand_adjectifs_essentiels,5,4.9e-06,0.77777778
+"mûr, mature",reif,liste_vocabulaire_allemand_adjectifs_essentiels,4,8.71e-06,0.7333333200000001
+mystérieux,geheimnisvoll,liste_vocabulaire_allemand_adjectifs_essentiels,13,1.66e-06,0.91304348
+naturel,natürlich,allemand_adjectifs_utiles,9,0.000417,0.375
+nécessaire,notwendig,allemand_adjectifs_utiles,9,5.5e-05,0.68421054
+négligeable,vernachlässigbar,allemand_adjectifs_utiles,16,5.62e-07,0.62962964
+nerveux,nervös,allemand_adjectifs_utiles,6,1.15e-05,0.38461535999999996
+nombreux,zahlreich,allemand_adjectifs_utiles,9,4.79e-06,0.76470588
+nostalgique,nostalgisch,allemand_adjectifs_utiles,11,8.51e-07,0.27272725
+nouveau,neu,allemand_adjectifs_utiles,3,0.000229,0.4
+nul,ungültig,allemand_adjectifs_utiles,8,4.68e-06,0.63636363
+occupé,beschäftigt,allemand_adjectifs_utiles,11,6.31e-05,0.88235294
+officiel,offiziell,allemand_adjectifs_utiles,9,4.57e-05,0.17647060000000003
+optimiste,optimistisch,allemand_adjectifs_utiles,12,6.17e-06,0.23809519999999995
+ordinaire,gewöhnlich,allemand_adjectifs_utiles,10,1.35e-05,0.89473684
+original,originell,allemand_adjectifs_utiles,9,2.82e-06,0.17647060000000003
+ouvert,offen,allemand_adjectifs_utiles,5,9.77e-05,0.63636363
+paresseux,faul,allemand_adjectifs_utiles,4,1.26e-05,0.69230768
+parfait,perfekt,allemand_adjectifs_utiles,7,6.92e-05,0.42857140000000005
+passable,passabel,allemand_adjectifs_utiles,8,6.92e-07,0.125
+passionnant,spannend,allemand_adjectifs_utiles,8,2.69e-05,0.4736842
+passionné,leidenschaftlich,allemand_adjectifs_utiles,16,4.79e-06,0.84
+patient,geduldig,allemand_adjectifs_utiles,8,5.37e-06,0.86666666
+pauvre,arm,allemand_adjectifs_utiles,3,5.5e-05,0.55555555
+pénible,mühsam,allemand_adjectifs_utiles,6,6.61e-06,1.0
+persévérant,ausdauernd,allemand_adjectifs_utiles,10,6.61e-07,0.7142857
+pertinent,relevant,allemand_adjectifs_utiles,8,8.32e-06,0.52941176
+pessimiste,pessimistisch,allemand_adjectifs_utiles,13,1.32e-06,0.21739129999999995
+petit,klein,allemand_adjectifs_utiles,5,8.71e-05,0.6
+peu,wenig,allemand_adjectifs_utiles,5,0.000309,0.75
+peureux,ängstlich,allemand_adjectifs_utiles,9,3.89e-06,1.0
+phénoménal,phänomenal,allemand_adjectifs_utiles,10,1.1e-06,0.19999999999999996
+pire (moins bon),schlechter,allemand_adjectifs_utiles,10,3.47e-05,0.92307692
+plaisant,ansprechend,allemand_adjectifs_utiles,11,2e-06,0.78947368
+plein,voll,allemand_adjectifs_utiles,4,0.000148,0.77777778
+politique,politisch,allemand_adjectifs_utiles,9,4.07e-05,0.33333330000000005
+pollué,verschmutzt,allemand_adjectifs_utiles,11,1.12e-06,0.88235294
+ponctuel,pünktlich,allemand_adjectifs_utiles,9,1.74e-05,0.52941176
+populaire,populär,allemand_adjectifs_utiles,7,5.62e-06,0.25
+positif,positiv,allemand_adjectifs_utiles,7,5.62e-05,0.14285713
+possible,möglich,allemand_adjectifs_utiles,7,0.000251,0.86666666
+pourri,verfault,allemand_adjectifs_utiles,8,2.75e-07,0.85714285
+pratique,praktisch,allemand_adjectifs_utiles,9,4.17e-05,0.4117647
+précieux,wertvoll,allemand_adjectifs_utiles,8,9.12e-06,0.875
+précis,präzise,allemand_adjectifs_utiles,7,7.08e-06,0.38461535999999996
+premier,erster,allemand_adjectifs_utiles,6,0.000112,0.69230768
+près,nahe,allemand_adjectifs_utiles,4,8.13e-05,1.0
+prétentieux,"anmaßend, eingebildet",allemand_adjectifs_utiles,21,6.57e-07,0.8125
+privé,privat,allemand_adjectifs_utiles,6,3.55e-05,0.27272725
+prochain,nächster,allemand_adjectifs_utiles,8,1.7e-05,0.75
+proche,nahe,allemand_adjectifs_utiles,4,8.13e-05,0.6
+prodigieux,erstaunlich,allemand_adjectifs_utiles,11,2.09e-05,0.8095238
+profond,tiefgehend,allemand_adjectifs_utiles,10,1.66e-07,0.6470587999999999
+propre,sauber,allemand_adjectifs_utiles,6,2.88e-05,0.83333333
+prudent,vorsichtig,allemand_adjectifs_utiles,10,2.75e-05,0.76470588
+public,öffentlich,allemand_adjectifs_utiles,10,5.25e-05,0.625
+puissant,mächtig,allemand_adjectifs_utiles,7,1.55e-05,0.86666666
+rapide,schnell,allemand_adjectifs_utiles,7,0.000324,0.8461538399999999
+rare,selten,allemand_adjectifs_utiles,6,9.55e-05,0.8
+ravi,überglücklich,allemand_adjectifs_utiles,13,1.7e-06,0.76470588
+réaliste,realistisch,allemand_adjectifs_utiles,11,9.12e-06,0.36842109999999995
+récent,kürzlich,allemand_adjectifs_utiles,8,2.04e-05,0.7142857
+recyclé,recycelt,allemand_adjectifs_utiles,8,7.08e-07,0.19999999999999996
+régulier,regulär,allemand_adjectifs_utiles,7,3.09e-06,0.33333330000000005
+religieux,religiös,allemand_adjectifs_utiles,8,5.62e-06,0.2941176
+remarquable,bemerkenswert,allemand_adjectifs_utiles,13,1e-05,0.75
+rempli,voll,allemand_adjectifs_utiles,4,0.000148,0.8
+responsable,verantwortlich,allemand_adjectifs_utiles,14,6.03e-05,0.76
+riche,reich,allemand_adjectifs_utiles,5,8.51e-05,0.19999999999999996
+romantique,romantisch,allemand_adjectifs_utiles,10,6.17e-06,0.30000000000000004
+sale,schmutzig,allemand_adjectifs_utiles,9,5.01e-06,0.8461538399999999
+salé,salzig,allemand_adjectifs_utiles,6,1.29e-06,0.4
+satisfaisant,befriedigend,allemand_adjectifs_utiles,12,2.24e-06,0.75
+satisfait,zufrieden,allemand_adjectifs_utiles,9,6.03e-05,0.77777778
+sauvage,wild,allemand_adjectifs_utiles,4,3.16e-05,1.0
+sec,trocken,allemand_adjectifs_utiles,7,2e-05,0.8
+secret,geheim,allemand_adjectifs_utiles,6,8.13e-06,0.66666666
+séduisant,verführerisch,allemand_adjectifs_utiles,13,1.66e-06,0.81818181
+"sérieux, sérieuse",ernst,allemand_adjectifs_utiles,5,0.000162,0.72727272
+silencieux,still,allemand_adjectifs_utiles,5,2.75e-05,0.6
+similaire,gleichartig,allemand_adjectifs_utiles,11,2.19e-07,0.8
+simple,einfach,allemand_adjectifs_utiles,7,0.000891,0.8461538399999999
+sincère,aufrichtig,allemand_adjectifs_utiles,10,3.63e-06,0.88235294
+sociable,gesellig,allemand_adjectifs_utiles,8,8.71e-07,0.875
+solide,fest,allemand_adjectifs_utiles,4,0.000158,0.8
+solitaire,einsam,allemand_adjectifs_utiles,6,9.33e-06,0.86666666
+sombre,dunkel,allemand_adjectifs_utiles,6,2.69e-05,0.83333333
+souriant,lächelnd,allemand_adjectifs_utiles,8,3.24e-06,0.875
+spacieux,geräumig,allemand_adjectifs_utiles,8,5.75e-07,0.75
+spécial,besonders,allemand_adjectifs_utiles,9,0.000282,0.875
+spécifique,spezifisch,allemand_adjectifs_utiles,10,5.25e-06,0.5
+splendide,großartig,allemand_adjectifs_utiles,9,3.55e-05,0.88888889
+"sportif, sportive",sportlich,allemand_adjectifs_utiles,9,1.05e-05,0.53846154
+stupide,dumm,allemand_adjectifs_utiles,4,5.75e-05,0.81818181
+super,super / toll,allemand_adjectifs_utiles,12,6.42e-05,0.4117647
+superbe,großartig,allemand_adjectifs_utiles,9,3.55e-05,0.875
+superficiel,oberflächlich,allemand_adjectifs_utiles,13,4.9e-06,0.58333334
+superstitieux,abergläubisch,allemand_adjectifs_utiles,13,3.8e-07,0.7692307700000001
+supplémentaire,zusätzlich,allemand_adjectifs_utiles,10,6.92e-05,0.75
+supportable,erträglich,allemand_adjectifs_utiles,10,2.19e-06,0.7142857
+surpeuplé,übervölkert,allemand_adjectifs_utiles,11,3.24e-08,0.8
+surpris,überrascht,allemand_adjectifs_utiles,10,4.37e-05,0.6470587999999999
+sympathique,sympathisch,allemand_adjectifs_utiles,11,8.51e-06,0.27272725
+talentueux,talentiert,allemand_adjectifs_utiles,10,1.26e-06,0.30000000000000004
+temporaire,vorübergehend,allemand_adjectifs_utiles,13,1.23e-05,0.73913044
+terrible,furchtbar,allemand_adjectifs_utiles,9,1.35e-05,0.76470588
+têtu,stur,allemand_adjectifs_utiles,4,2.75e-06,0.5
+timide,schüchtern,allemand_adjectifs_utiles,10,6.31e-06,0.75
+tolérable,erträglich,allemand_adjectifs_utiles,10,2.19e-06,0.89473684
+tolérant,tolerant,allemand_adjectifs_utiles,8,2.29e-06,0.125
+total,total,allemand_adjectifs_utiles,5,8.32e-05,0.0
+toxique,giftig,allemand_adjectifs_utiles,6,3.09e-06,0.8461538399999999
+traditionnel,traditionell,allemand_adjectifs_utiles,12,1.41e-05,0.08333330000000005
+triangulaire,dreieckig,allemand_adjectifs_utiles,9,5.37e-07,0.8095238
+triste,traurig,allemand_adjectifs_utiles,7,4.37e-05,0.53846154
+troublant,beunruhigend,allemand_adjectifs_utiles,12,1.66e-06,0.8095238
+typique,typisch,allemand_adjectifs_utiles,7,2.29e-05,0.42857140000000005
+unique,einmalig,allemand_adjectifs_utiles,8,6.03e-06,0.85714285
+usé,verbraucht,allemand_adjectifs_utiles,10,8.13e-06,0.8461538399999999
+vaste,weitläufig,allemand_adjectifs_utiles,10,8.51e-07,0.86666666
+vide,leer,allemand_adjectifs_utiles,4,3.98e-05,0.75
+vieux,alt,allemand_adjectifs_utiles,3,0.000145,1.0
+visqueux,schleimig,allemand_adjectifs_utiles,9,3.55e-07,0.76470588
+vivant,lebend,allemand_adjectifs_utiles,6,3.98e-06,0.83333333
+volumineux,umfangreich,allemand_adjectifs_utiles,11,3.89e-06,0.6190476
+vrai (véridique),wahr,allemand_adjectifs_utiles,4,6.31e-05,0.8
+vulgaire,vulgär,allemand_adjectifs_utiles,6,7.08e-07,0.28571427000000005
+vulnérable,verwundbar,allemand_adjectifs_utiles,10,5.13e-07,0.8
+célibataire,ledig,fiche_vocabulaire_allemand_amour_et_mariage,5,1.7e-06,0.75
+chérie / ma chérie,Schätz / Liebling,fiche_vocabulaire_allemand_amour_et_mariage,17,4.67e-07,0.6
+les voeux,die Ehegelübde,fiche_vocabulaire_allemand_amour_et_mariage,14,3.98e-08,0.73913044
+le bouquet,der Strauß,fiche_vocabulaire_allemand_amour_et_mariage,10,1.29e-05,0.7
+les fleurs,die Blumen,fiche_vocabulaire_allemand_amour_et_mariage,10,2.69e-05,0.6
+divorcé,geschieden,fiche_vocabulaire_allemand_amour_et_mariage,10,5.5e-06,0.88235294
+amoureux,verliebt,fiche_vocabulaire_allemand_amour_et_mariage,8,2.29e-05,0.875
+je t’aime,ich liebe dich,fiche_vocabulaire_allemand_amour_et_mariage,14,0.000214,0.73913044
+l’amitié,die Freundschaft,fiche_vocabulaire_allemand_amour_et_mariage,16,2.75e-05,0.83333333
+l’amour,die Liebe,fiche_vocabulaire_allemand_amour_et_mariage,9,0.000299,1.0
+l’apéritif,der Aperitif,fiche_vocabulaire_allemand_amour_et_mariage,12,6.61e-07,0.45454543999999997
+la mariée,die Braut,fiche_vocabulaire_allemand_amour_et_mariage,9,1.2e-05,0.77777778
+la passion,die Leidenschaft,fiche_vocabulaire_allemand_amour_et_mariage,16,2.24e-05,0.8461538399999999
+la réception de mariage,Hochzeitsempfang,fiche_vocabulaire_allemand_amour_et_mariage,16,2e-08,0.79487179
+la saint valentin,Valentinstag,fiche_vocabulaire_allemand_amour_et_mariage,12,3.39e-06,0.5172414000000001
+le bonheur,das Glück,fiche_vocabulaire_allemand_amour_et_mariage,9,0.000172,0.89473684
+"le copain, le petit-ami",der Freund,fiche_vocabulaire_allemand_amour_et_mariage,10,0.000128,0.81818181
+le costume (du marié),der Anzug,fiche_vocabulaire_allemand_amour_et_mariage,9,1e-05,0.86666666
+"le fiancé, la fiancée",der / die Verlobte,fiche_vocabulaire_allemand_amour_et_mariage,18,2.29e-06,0.8461538399999999
+le jeune marié,der Bräutigam,fiche_vocabulaire_allemand_amour_et_mariage,13,3.31e-06,0.77777778
+le premier amour,die erste Liebe,fiche_vocabulaire_allemand_amour_et_mariage,15,0.000166,0.7419355000000001
+le témoin,der Zeuge,fiche_vocabulaire_allemand_amour_et_mariage,9,1.41e-05,0.77777778
+les fiançailles,die Verlobung,fiche_vocabulaire_allemand_amour_et_mariage,13,2.45e-06,0.85714285
+les jeunes mariés,Jungverheiratete,fiche_vocabulaire_allemand_amour_et_mariage,16,1.41e-08,0.6969697
+se marier,heiraten,fiche_vocabulaire_allemand_amour_et_mariage,8,1.82e-05,0.6470587999999999
+la femme / L’épouse,die Ehefrau,fiche_vocabulaire_allemand_amour_et_mariage,11,2.09e-05,0.8
+le mari / l’époux,der Ehemann,fiche_vocabulaire_allemand_amour_et_mariage,11,1.82e-05,0.7142857
+romantique,romantisch,fiche_vocabulaire_allemand_amour_et_mariage,10,6.17e-06,0.30000000000000004
+tu me manques,Ich vermisse dich,fiche_vocabulaire_allemand_amour_et_mariage,17,1.21e-05,0.7333333200000001
+l’ami,der Freund,fiche_vocabulaire_allemand_amour_et_mariage,10,0.000128,1.0
+l’anniversaire de mariage,der Hochzeitstag,fiche_vocabulaire_allemand_amour_et_mariage,16,1.95e-06,0.7073170799999999
+"le baiser, le bisou",der Kuss,fiche_vocabulaire_allemand_amour_et_mariage,8,1.26e-05,0.7037036999999999
+le bouquet,die Blumen,fiche_vocabulaire_allemand_amour_et_mariage,10,2.69e-05,0.6
+le cadeau,das Geschenk,fiche_vocabulaire_allemand_amour_et_mariage,12,3.54e-05,0.8095238
+le coeur,das Herz,fiche_vocabulaire_allemand_amour_et_mariage,8,0.000106,0.625
+le compliment,das Kompliment,fiche_vocabulaire_allemand_amour_et_mariage,14,6.91e-06,0.25925929999999997
+le couple,das Paar,fiche_vocabulaire_allemand_amour_et_mariage,8,0.000354,0.88235294
+le discours,die Rede,fiche_vocabulaire_allemand_amour_et_mariage,8,9.97e-05,0.78947368
+le gâteau de mariage,die Hochzeitstorte,fiche_vocabulaire_allemand_amour_et_mariage,18,4.17e-07,0.78947368
+l’invité,der Gast,fiche_vocabulaire_allemand_amour_et_mariage,8,3.89e-05,0.875
+le mariage (l’union légale),die Ehe,fiche_vocabulaire_allemand_amour_et_mariage,7,7.92e-05,0.8235294
+le marié,der Bräutigam,fiche_vocabulaire_allemand_amour_et_mariage,13,3.31e-06,0.7142857
+le nœud papillon,die Fliege,fiche_vocabulaire_allemand_amour_et_mariage,10,6.46e-06,0.7692307700000001
+le partenaire,der Partner,fiche_vocabulaire_allemand_amour_et_mariage,11,6.3e-05,0.41666669999999995
+le smoking,der Smoking,fiche_vocabulaire_allemand_amour_et_mariage,11,1.02e-06,0.23809519999999995
+le verre de champagne,das Champagnerglas,fiche_vocabulaire_allemand_amour_et_mariage,18,4.37e-08,0.48717946
+le voyage de noces,die Flitterwochen,fiche_vocabulaire_allemand_amour_et_mariage,17,1.05e-06,0.6571428500000001
+la lune de miel,Die Hochzeitsreise,fiche_vocabulaire_allemand_amour_et_mariage,18,6.92e-07,0.878787875
+l’alliance,der Ehering,fiche_vocabulaire_allemand_amour_et_mariage,11,7.59e-07,0.9047619
+la bague,der Ring,fiche_vocabulaire_allemand_amour_et_mariage,8,3.46e-05,0.875
+la bague de fiançailles,der Verlobungsring,fiche_vocabulaire_allemand_amour_et_mariage,18,5.5e-07,0.75609756
+la carte de la saint-valentin,die Valentinskarte,fiche_vocabulaire_allemand_amour_et_mariage,18,1.23e-08,0.61702126
+la mairie,das Standesamt,fiche_vocabulaire_allemand_amour_et_mariage,14,2.04e-06,0.6521739
+la cérémonie,die Zeremonie,fiche_vocabulaire_allemand_amour_et_mariage,13,4.57e-06,0.43999999999999995
+la cravate,die Krawatte,fiche_vocabulaire_allemand_amour_et_mariage,12,3.63e-06,0.45454543999999997
+la déclaration d’amour,die Liebeserklärung,fiche_vocabulaire_allemand_amour_et_mariage,19,1.35e-06,0.8048780600000001
+la demoiselle d’honneur,die Brautjungfer,fiche_vocabulaire_allemand_amour_et_mariage,16,1.58e-07,0.7435897300000001
+l’étreinte,die Umarmung,fiche_vocabulaire_allemand_amour_et_mariage,12,3.31e-06,0.81818181
+l’histoire d’amour,die Liebesgeschichte,fiche_vocabulaire_allemand_amour_et_mariage,20,2.69e-06,0.84210527
+la lettre d’amour,der Liebesbrief,fiche_vocabulaire_allemand_amour_et_mariage,15,8.13e-07,0.875
+l’église,der Kirche,fiche_vocabulaire_allemand_amour_et_mariage,10,0.000141,0.88888889
+"la petite amie, la copine",die Freundin,fiche_vocabulaire_allemand_amour_et_mariage,12,9.74e-05,0.72972974
+"la proposition de mariage, la demande en mariage",der Heiratsantrag,fiche_vocabulaire_allemand_amour_et_mariage,17,1.91e-06,0.69230768
+la robe de mariée,das Hochzeitskleid,fiche_vocabulaire_allemand_amour_et_mariage,18,9.12e-07,0.8285714200000001
+la surprise,die Überraschung,fiche_vocabulaire_allemand_amour_et_mariage,16,2.75e-05,0.85185185
+avoir le coup de foudre pour qqun,sich auf den ersten Blick in jdn verlieben,fiche_vocabulaire_allemand_amour_et_mariage,42,1.12e-07,0.81333333
+divorcer,sich scheiden lassen,fiche_vocabulaire_allemand_amour_et_mariage,20,7.65e-06,0.78571428
+embrasser,küssen,fiche_vocabulaire_allemand_amour_et_mariage,6,1.12e-05,0.6
+être amoureux,verliebt sein,fiche_vocabulaire_allemand_amour_et_mariage,13,2.27e-05,0.7692307700000001
+se fiancer,sich verloben,fiche_vocabulaire_allemand_amour_et_mariage,13,3.24e-07,0.5652174
+faire l’amour,Liebe machen,fiche_vocabulaire_allemand_amour_et_mariage,12,0.000229,0.6799999999999999
+flirter,flirten,fiche_vocabulaire_allemand_amour_et_mariage,7,4.79e-06,0.14285713
+séduire,verführen,fiche_vocabulaire_allemand_amour_et_mariage,9,3.31e-06,0.75
+sortir avec quelqu’un,mit jdm zusammen sein,fiche_vocabulaire_allemand_amour_et_mariage,21,1.66e-07,0.7142857
+tomber amoureux,sich verlieben,fiche_vocabulaire_allemand_amour_et_mariage,14,5.24e-06,0.79310344
+l’herbe (la pelouse),das Gras,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,8,1.82e-05,0.85714285
+l’abeille,die Biene,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,3.39e-06,0.77777778
+l’abricotier,der Aprikosenbaum,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,17,1.05e-08,0.8620689699999999
+l’arbre,der Baum,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,8,4.16e-05,0.86666666
+l’arbre fruitier,der Obstbaum,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,12,1.35e-07,0.85714285
+l’arrosoir,die Gießkanne,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,13,5.25e-07,0.91304348
+l’artichaut,die Artischocke,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,15,1.2e-07,0.6153846000000001
+l’asperge,der Spargel,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,11,3.63e-06,0.6
+l’aubergine,die Aubergine,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,13,5.25e-07,0.33333330000000005
+l’écorce,die Rinde,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,2.45e-06,0.88235294
+l’épinard,der Spinat,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,10,2.57e-06,0.5789473700000001
+l’épine,der Dorn,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,8,4.79e-06,0.86666666
+l’érable,der Ahorn,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,1.55e-06,0.88235294
+l’hortensia,die Hortensie,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,13,1.2e-07,0.41666669999999995
+l’œillet,die Nelke,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,4.37e-07,0.76470588
+l’oignon,die Zwiebel,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,11,3.39e-06,0.89473684
+l’oranger,der Orangenbaum,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,15,6.31e-08,0.58333334
+l’orchidée,die Orchidee,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,12,6.03e-07,0.45454543999999997
+l’orme,die Ulme,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,8,3.39e-07,0.57142857
+l’outil,das Werkzeug,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,12,1.17e-05,0.89473684
+la baie,die Beere,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,5.13e-07,0.75
+la bêche,das Spaten,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,10,1.74e-06,0.66666666
+la betterave,die Zuckerrübe,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,14,1.55e-07,0.69230768
+la branche,der Zweig,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,5.89e-06,0.89473684
+la brouette,die Schubkarre,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,14,5.37e-07,0.84
+la campanule,die Glockenblume,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,16,7.08e-08,0.928571425
+la carotte,die Karotte,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,11,1.02e-06,0.33333330000000005
+la chrysanthème,die Chrysantheme,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,16,1.12e-07,0.2903226
+la cisaille,die Schere,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,10,6.02e-06,0.8095238
+la citrouille,der Kürbis,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,10,2.95e-06,0.91304348
+la clôture,der Zaun,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,8,1.12e-05,0.88888889
+la courgette,die Zucchini,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,12,2.04e-06,0.916666664
+la culture,die Kultur,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,10,0.000104,0.4
+la feuille,das Blatt,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,2.39e-05,0.78947368
+la fleur,die Blume,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,8.71e-06,0.76470588
+la forêt,der Wald,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,8,6.44e-05,0.875
+la forêt tropicale,der Regenwald,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,13,2.95e-06,0.7419355000000001
+la fougère,der Farn,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,8,5.13e-07,0.88888889
+la fourche,die Gabel,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,4.36e-06,0.89473684
+la graine,der Samen,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,1.12e-05,0.88888889
+la guêpe,die Wespe,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,1.07e-06,0.6470587999999999
+la haie,die Hecke,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,2.29e-06,0.75
+la jacinthe,die Hyazinthe,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,13,4.79e-08,0.41666669999999995
+la jonquille,die Narzisse,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,12,1.48e-07,0.83333333
+la laitue,der Kopfsalat,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,13,2.24e-07,0.72727272
+la marguerite,das Gänseblümchen,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,17,7.08e-07,0.7333333200000001
+"la patate, la pomme de terre",die Kartoffel,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,13,5.49e-06,0.8048780600000001
+la pelouse,der Rasen,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,1.32e-05,0.68421054
+la pivoine,die Pfingstrose,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,15,1.29e-07,0.6799999999999999
+la plante,die Pflanze,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,11,1.35e-05,0.5
+la pluie,der Regen,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,4.26e-05,0.88235294
+la racine,die Wurzel,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,10,5.75e-06,0.78947368
+la récolte,die Ernte,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,9.55e-06,0.5789473700000001
+la rose,die Rose,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,8,2.24e-05,0.46666664
+la rosée,der Tau,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,7,2.4e-06,0.86666666
+la salade,der Salat,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,1.26e-05,0.55555555
+la serre,das Gewächshaus,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,15,1.91e-06,0.73913044
+la tige de la fleur,der Blütenstiel,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,15,2.82e-08,0.8235294
+la tomate,die Tomate,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,10,2.29e-06,0.36842109999999995
+la tondeuse à gazon,der Rasenmäher,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,14,1.82e-06,0.6969697
+la tulipe,die Tulpe,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,5.89e-07,0.44444439999999996
+le bananier,der Bananenbaum,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,15,1.62e-08,0.46153843000000006
+le banc,die Bank,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,8,8.11e-05,0.46666664
+le bois,das Holz,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,8,4.35e-05,0.86666666
+le bouleau,die Birke,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,1.51e-06,0.68421054
+le bouquet de fleurs,der Blumenstrauss,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,17,1.51e-06,0.78378378
+le bourgeon,die Knospe,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,10,7.41e-07,0.7142857
+le buis,Buchsbaum,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,2.34e-07,0.75
+le buisson,Der Busch,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,1.02e-05,0.5789473700000001
+le bulbe,die Glühbirne,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,13,1.45e-06,0.5238095199999999
+le cactus,der Kaktus,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,10,1.17e-06,0.36842109999999995
+le cerisier,der Kirschbaum,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,14,1.12e-06,0.6799999999999999
+le champignon,der Pilz,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,8,6.61e-06,0.7142857
+le chemin,der Weg,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,7,0.00046,0.625
+le chêne,die Eiche,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,5.75e-06,0.4117647
+le chèvrefeuille,Geißblatt,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,8.71e-08,0.76
+le chou,der Kohl,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,8,9.77e-06,0.6
+le chou-fleur,der Blumenkohl,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,14,1.12e-06,0.85185185
+le citronnier,der Zitronenbaum,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,16,7.24e-08,0.44827585999999997
+le compost,der Kompost,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,11,1.07e-06,0.23809519999999995
+le concombre,die Gurke,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,2.45e-06,0.6190476
+le coquelicot,der Mohn,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,8,1.66e-06,0.7142857
+le feuillage,das Laub,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,8,4.26e-06,0.9
+le figuier,der Feigenbaum,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,14,2.95e-07,0.83333333
+le haricot,die Bohne,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,1.62e-06,0.68421054
+le hêtre,die Buche,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,8.91e-06,0.52941176
+le houx,die Stechpalme,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,14,1.35e-07,0.7142857
+le jardin,den Garten,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,10,5.34e-05,0.4736842
+le jardinage,die Gärtnerei,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,13,1.23e-06,0.76
+le jardinier,der Gärtner,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,11,7.76e-06,0.73913044
+le lierre,der Efeu,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,8,7.41e-07,0.6470587999999999
+le lilas,der Flieder,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,11,9.77e-07,0.5789473700000001
+le lis,die Lilie,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,1.02e-06,0.46666664
+le maïs,der Mais,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,8,7.08e-06,0.46666664
+le marronnier,der Kastanienbaum,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,17,1.26e-07,0.66666666
+le muguet,das Maiglöckchen,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,16,2.95e-07,0.76
+le navet,die Rübe,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,8,1.23e-06,0.625
+le noyer,der Walnussbaum,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,15,5.37e-08,0.82608695
+le palmier,die Palme,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,3.24e-06,0.36842109999999995
+le parterre de fleurs,das Blumenbeet,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,14,3.63e-07,0.885714285
+le pêcher,der Pfirsich,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,12,1.48e-06,0.8095238
+le persil,die Petersilie,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,14,1.41e-06,0.3913044
+le peuplier,die Pappel,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,10,5.25e-07,0.8095238
+le pin,die Kiefer,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,10,6.92e-06,0.625
+le pissenlit,der Löwenzahn,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,13,1.41e-06,0.6799999999999999
+le platane,die Platane,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,11,2.69e-07,0.23809519999999995
+le poirier,der Birnbaum,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,12,9.12e-07,0.81818181
+le pommier,der Apfelbaum,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,13,9.77e-07,0.82608695
+le pot de fleur,der Blumentopf,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,14,1.07e-06,0.79310344
+le potager,der Gemüsegarten,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,16,5.01e-07,0.8461538399999999
+le printemps,"der Frühling, das Frühjahr",liste_vocabulaire_allemand_arbres_plantes_et_jardinage,26,1.11e-05,0.7368421
+le radis,das Radieschen,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,14,7.59e-07,0.54545453
+le râteau,die Harke,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,4.79e-07,0.66666666
+le rosier,der Rosenbusch,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,14,1.82e-07,0.82608695
+le sapin,der Tannenbaum,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,14,1.2e-06,0.63636363
+le saule pleureur,die Trauerweide,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,15,1.23e-07,0.5625
+le sécateur,die Baumschere,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,14,2.51e-08,0.6
+le sol,der Boden,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,0.000102,0.6
+la terre,die Erde,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,8,7.92e-05,0.625
+le soleil,die Sonne,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,7.06e-05,0.55555555
+le terreau,die Blumenerde,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,14,1.82e-07,0.58333334
+le tilleul,die Linde,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,4.47e-06,0.5789473700000001
+le tournesol,die Sonnenblume,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,15,6.03e-07,0.55555555
+le tronc d’arbre,der Baumstamm,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,13,1.35e-06,0.8620689699999999
+le tuyau d’arrosage,der Gartenschlauch,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,18,5.37e-07,0.78378378
+le ver,der Wurm,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,8,5.37e-06,0.7142857
+le verger,der Obstgarten,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,14,5.25e-07,0.6521739
+le vignoble,der Weinberg,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,12,3.16e-06,0.73913044
+les feuilles,die Blätter,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,11,1.74e-05,0.82608695
+les fleurs poussent,die Blumen wachsen,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,18,1.39e-05,0.5675675600000001
+les gants,die Handschuhe,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,14,5.75e-06,0.5652174
+le légume,das Gemüse (les légumes = das Gemüse),liste_vocabulaire_allemand_arbres_plantes_et_jardinage,37,0.0,0.60869566
+les lentilles,die Linsen,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,10,3.71e-06,0.6521739
+la mauvaise herbe,das Unkraut,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,11,3.16e-06,0.7142857
+les outils de jardin,Gartengeräte,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,12,2.34e-07,0.8125
+les pois,die Erbse,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,9,7.76e-07,0.76470588
+les pois chiches,die Kichererbsen,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,16,6.46e-07,0.5625
+l’abri de jardin,Gartenschuppen,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,14,4.17e-08,0.8
+désherber,jäten,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,5,2.88e-07,0.85714285
+arroser (une plante),gießen,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,6,1.45e-05,0.7692307700000001
+arroser (la pelouse),gießen,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,6,1.45e-05,0.8461538399999999
+cueillir des fleurs,Blumen pflücken,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,15,1.37e-06,0.6470587999999999
+planter,pflanzen,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,8,3.89e-05,0.33333330000000005
+pousser (des plantes),wachsen,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,7,2.88e-05,0.78571428
+tondre le gazon,den Rasen mähen,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,15,1.5e-06,0.8
+fertiliser,düngen,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,6,6.92e-07,0.875
+élaguer,beschneiden,liste_vocabulaire_allemand_arbres_plantes_et_jardinage,11,1.62e-06,0.88888889
+armé,bewaffnet,liste_vocabulaire_allemand_crime_criminalite,9,5.75e-06,0.8461538399999999
+abandonné,verlassen,liste_vocabulaire_allemand_crime_criminalite,9,8.91e-05,0.77777778
+dangereux,gefährlich,liste_vocabulaire_allemand_crime_criminalite,10,3.98e-05,0.68421054
+la contrebande,der Schmuggel,liste_vocabulaire_allemand_crime_criminalite,13,8.91e-07,0.85185185
+de la fausse monnaie,das Falschgeld,liste_vocabulaire_allemand_crime_criminalite,14,7.94e-07,0.6470587999999999
+les menottes,Handschellen,liste_vocabulaire_allemand_crime_criminalite,12,2.75e-06,0.75
+illégal,rechtswidrig,liste_vocabulaire_allemand_crime_criminalite,12,3.63e-06,0.78947368
+l’accusé,der Angeklagte,liste_vocabulaire_allemand_crime_criminalite,14,6.02e-06,0.81818181
+l’adultère,der Ehebruch,liste_vocabulaire_allemand_crime_criminalite,12,1.23e-06,0.81818181
+l’assaillant,der Angreifer,liste_vocabulaire_allemand_crime_criminalite,13,8.91e-06,0.92
+l’esclavage,die Sklaverei,liste_vocabulaire_allemand_crime_criminalite,13,5.37e-06,0.58333334
+l’espionnage,die Spionage,liste_vocabulaire_allemand_crime_criminalite,12,4.47e-06,0.33333330000000005
+la calomnie,die Verleumdung,liste_vocabulaire_allemand_crime_criminalite,15,1.91e-06,0.8461538399999999
+la conspiration,die Verschwörung,liste_vocabulaire_allemand_crime_criminalite,16,7.41e-06,0.80645162
+la contrefaçon,die Fälschung,liste_vocabulaire_allemand_crime_criminalite,13,3.55e-06,0.85185185
+la corruption,die Korruption,liste_vocabulaire_allemand_crime_criminalite,14,1.05e-05,0.25925929999999997
+la cybercriminalité,die Cyberkriminalität,liste_vocabulaire_allemand_crime_criminalite,21,2.63e-07,0.30000000000000004
+la délinquance,die Kriminalität,liste_vocabulaire_allemand_crime_criminalite,16,1e-05,0.7333333200000001
+la diffamation,die Verleumdung,liste_vocabulaire_allemand_crime_criminalite,15,1.91e-06,0.7241379299999999
+la discrimination,die Diskriminierung,liste_vocabulaire_allemand_crime_criminalite,19,1.02e-05,0.44444439999999996
+la mafia,die Mafia,liste_vocabulaire_allemand_crime_criminalite,9,9.12e-06,0.4117647
+la pédophilie,die Pädophilie,liste_vocabulaire_allemand_crime_criminalite,14,1.7e-06,0.33333330000000005
+la peine de mort,die Todesstrafe,liste_vocabulaire_allemand_crime_criminalite,15,7.76e-06,0.6129032400000001
+la prostitution,die Prostitution,liste_vocabulaire_allemand_crime_criminalite,16,4.9e-06,0.22580650000000002
+la torture,die Folter,liste_vocabulaire_allemand_crime_criminalite,10,8.13e-06,0.9
+"la violence (la brutalité, la contrainte)",die Gewalt,liste_vocabulaire_allemand_crime_criminalite,10,7.92e-05,0.76470588
+la violence familiale,häusliche Gewalt,liste_vocabulaire_allemand_crime_criminalite,16,2.6e-06,0.78378378
+le chantage,die Erpressung,liste_vocabulaire_allemand_crime_criminalite,14,3.71e-06,0.76
+le crime organisé,organisierte Kriminalität,liste_vocabulaire_allemand_crime_criminalite,25,5e-06,0.66666666
+le cyberharcèlement,Cyber-Belästigung,liste_vocabulaire_allemand_crime_criminalite,17,2.03e-06,0.66666666
+le délit de fuite,Fahrerflucht,liste_vocabulaire_allemand_crime_criminalite,12,1.2e-06,0.7241379299999999
+le détournement de mineur,Kindesmissbrauch,liste_vocabulaire_allemand_crime_criminalite,16,1.62e-06,0.8048780600000001
+le harcèlement sexuel,sexuelle Belästigung,liste_vocabulaire_allemand_crime_criminalite,20,2.94e-06,0.7073170799999999
+le suspect,der Verdächtige,liste_vocabulaire_allemand_crime_criminalite,15,7.41e-06,0.6
+le terrorisme,der Terrorismus,liste_vocabulaire_allemand_crime_criminalite,15,7.58e-06,0.28571427000000005
+le tireur,der Schütze,liste_vocabulaire_allemand_crime_criminalite,11,6.92e-06,0.7
+le vandalisme,der Vandalismus,liste_vocabulaire_allemand_crime_criminalite,15,2.63e-06,0.28571427000000005
+le vol à la tire,Taschendiebstahl,liste_vocabulaire_allemand_crime_criminalite,16,2.45e-07,0.875
+le vol à l’étalage,Ladendiebstahl,liste_vocabulaire_allemand_crime_criminalite,14,7.59e-07,0.75
+le vol,der Diebstahl,liste_vocabulaire_allemand_crime_criminalite,13,1.17e-05,0.68421054
+le vol d’identité,Identitätsdiebstahl,liste_vocabulaire_allemand_crime_criminalite,19,2.88e-07,0.66666666
+le voleur,der Dieb,liste_vocabulaire_allemand_crime_criminalite,8,6.76e-06,0.76470588
+le vol à main armée,bewaffneter Raubüberfall,liste_vocabulaire_allemand_crime_criminalite,24,1.04e-06,0.8139534900000001
+maltraité,misshandelt,liste_vocabulaire_allemand_crime_criminalite,11,3.16e-06,0.6
+menaçant,bedrohlich,liste_vocabulaire_allemand_crime_criminalite,10,2.95e-06,0.88888889
+la trahison,der Verrat,liste_vocabulaire_allemand_crime_criminalite,10,5.49e-06,0.7142857
+l’abus de confiance,Vertrauensbruch,liste_vocabulaire_allemand_crime_criminalite,15,3.89e-07,0.8235294
+l’assassin,der Mörder,liste_vocabulaire_allemand_crime_criminalite,10,1.62e-05,1.0
+l’assassinat,der Mord,liste_vocabulaire_allemand_crime_criminalite,8,3.38e-05,1.0
+l’attentat,der Anschlag,liste_vocabulaire_allemand_crime_criminalite,12,1.7e-05,0.72727272
+le braquage,der Raubüberfall,liste_vocabulaire_allemand_crime_criminalite,16,2.04e-06,0.62962964
+le cambriolage,der Einbruch,liste_vocabulaire_allemand_crime_criminalite,12,1.1e-05,0.69230768
+le cambrioleur,der Einbrecher,liste_vocabulaire_allemand_crime_criminalite,14,6.61e-06,0.57142857
+le complice,der Komplize,liste_vocabulaire_allemand_crime_criminalite,12,1.29e-06,0.30434779999999995
+le complot,das Komplott,liste_vocabulaire_allemand_crime_criminalite,12,1.05e-06,0.36363639999999997
+le contrebandier,der Schmuggler,liste_vocabulaire_allemand_crime_criminalite,14,9.55e-07,0.8
+le coupable,der Schuldige,liste_vocabulaire_allemand_crime_criminalite,13,1.62e-06,0.5
+le couteau,das Messer,liste_vocabulaire_allemand_crime_criminalite,10,3.08e-05,0.9
+le crime,das Verbrechen,liste_vocabulaire_allemand_crime_criminalite,14,3.16e-05,0.81818181
+le crime contre l’humanité,Verbrechen das gegen die Menschlichkeit,liste_vocabulaire_allemand_crime_criminalite,39,5.75e-06,0.75384615
+le criminel,der Verbrecher,liste_vocabulaire_allemand_crime_criminalite,14,1.12e-05,0.76
+le dealer de drogue,der Drogendealer,liste_vocabulaire_allemand_crime_criminalite,16,1.62e-06,0.54285714
+le délit,die Straftat,liste_vocabulaire_allemand_crime_criminalite,12,6.02e-06,0.7
+le délit d’initié,das Insider-Delikt,liste_vocabulaire_allemand_crime_criminalite,18,8.01e-07,0.77142857
+le détournement (d’avion),die Flugzeugentführung,liste_vocabulaire_allemand_crime_criminalite,22,9.33e-08,0.6595744800000001
+l’empoisonnement,die Vergiftung,liste_vocabulaire_allemand_crime_criminalite,14,2.19e-06,0.7333333200000001
+l’enlèvement,die Entfernung,liste_vocabulaire_allemand_crime_criminalite,14,2.34e-05,0.7692307700000001
+l’espion,"der Spion, die Spionin",liste_vocabulaire_allemand_crime_criminalite,22,3.11e-07,0.66666666
+le témoignage (le récit),das Zeugnis,liste_vocabulaire_allemand_crime_criminalite,11,8.31e-06,0.77142857
+en flagrant délit,auf frischer Tat,liste_vocabulaire_allemand_crime_criminalite,16,7.01e-06,0.6969697
+"le fugitif, la fugitive",der / die Entflohene,liste_vocabulaire_allemand_crime_criminalite,20,1.35e-07,0.7209302200000001
+le gangster,der Gangster,liste_vocabulaire_allemand_crime_criminalite,12,4.57e-06,0.21739129999999995
+le génocide,der Völkermord,liste_vocabulaire_allemand_crime_criminalite,14,4.68e-06,0.84
+le hacker,der Hacker,liste_vocabulaire_allemand_crime_criminalite,10,8.32e-06,0.26315789999999994
+l’homicide,die Tötung,liste_vocabulaire_allemand_crime_criminalite,10,5.89e-06,0.8
+l’homicide volontaire / involontaire,vorsätzliche/fahrlässige Tötung,liste_vocabulaire_allemand_crime_criminalite,31,5.51e-07,0.82089552
+le hors la loi,der / die Geächtete,liste_vocabulaire_allemand_crime_criminalite,19,1.55e-07,0.81818181
+l’incendie,der Brand,liste_vocabulaire_allemand_crime_criminalite,9,2.82e-05,0.68421054
+l’infanticide,der Kindesmord,liste_vocabulaire_allemand_crime_criminalite,14,2.95e-08,0.85185185
+le kidnappeur,der Entführer,liste_vocabulaire_allemand_crime_criminalite,13,1.51e-06,0.7692307700000001
+le larcin (butin),das Diebesgut,liste_vocabulaire_allemand_crime_criminalite,13,7.59e-07,0.66666666
+le maître chanteur,der Erpresser,liste_vocabulaire_allemand_crime_criminalite,13,1.02e-06,0.6129032400000001
+le malfaiteur,der Übeltäter,liste_vocabulaire_allemand_crime_criminalite,13,1.2e-06,0.53846154
+le mariage blanc,die Scheinehe,liste_vocabulaire_allemand_crime_criminalite,13,1.91e-07,0.79310344
+le meurtre,der Mord,liste_vocabulaire_allemand_crime_criminalite,8,3.38e-05,0.66666666
+le meurtrier,der Mörder,liste_vocabulaire_allemand_crime_criminalite,10,1.62e-05,0.81818181
+le multirécidiviste,der Wiederholungstäter,liste_vocabulaire_allemand_crime_criminalite,22,5.89e-07,0.75609756
+le trafiquant de drogue,"der Dealer, die Dealerin",liste_vocabulaire_allemand_crime_criminalite,24,3.77e-08,0.78723404
+le pédophile,der / die Pädophile,liste_vocabulaire_allemand_crime_criminalite,19,1.48e-06,0.41935486
+le pickpocket,"der Taschendieb, die Taschendiebin",liste_vocabulaire_allemand_crime_criminalite,34,7.07e-08,0.82978724
+le pirate,der Pirat,liste_vocabulaire_allemand_crime_criminalite,9,2.75e-06,0.33333330000000005
+le pistolet,die Pistole,liste_vocabulaire_allemand_crime_criminalite,11,7.58e-06,0.27272725
+le pot de vin,das Schmiergeld,liste_vocabulaire_allemand_crime_criminalite,15,7.24e-07,0.78571428
+le pyromane,der Pyromane,liste_vocabulaire_allemand_crime_criminalite,12,3.31e-08,0.21739129999999995
+le terroriste,der Terrorist,liste_vocabulaire_allemand_crime_criminalite,13,4.57e-06,0.2307692
+le toxicomane,der Süchtige,liste_vocabulaire_allemand_crime_criminalite,12,5.62e-07,0.6799999999999999
+le trafic de drogue,Rauschgifthandel,liste_vocabulaire_allemand_crime_criminalite,16,1e-07,0.77142857
+le trafic d’arme,Waffenhandel,liste_vocabulaire_allemand_crime_criminalite,12,6.61e-07,0.78571428
+le tueur,der Mörder,liste_vocabulaire_allemand_crime_criminalite,10,1.62e-05,0.77777778
+le tueur en série,der Serienmörder,liste_vocabulaire_allemand_crime_criminalite,16,1.41e-06,0.57575756
+le viol,die Vergewaltigung,liste_vocabulaire_allemand_crime_criminalite,18,1.05e-05,0.76
+le violeur,der Vergewaltiger,liste_vocabulaire_allemand_crime_criminalite,17,3.55e-06,0.85185185
+l’agression,den Angriff,liste_vocabulaire_allemand_crime_criminalite,11,4.99e-05,0.72727272
+l’agression physique,Körperverletzung,liste_vocabulaire_allemand_crime_criminalite,16,8.51e-06,0.83333333
+l’agression sexuelle,sexuelle Nötigung,liste_vocabulaire_allemand_crime_criminalite,17,2.13e-06,0.5675675600000001
+l’alarme,der Alarm,liste_vocabulaire_allemand_crime_criminalite,9,1.26e-05,0.52941176
+l’arme,die Waffe,liste_vocabulaire_allemand_crime_criminalite,9,2.57e-05,0.86666666
+l’attaque armée,den bewaffneten Angriff,liste_vocabulaire_allemand_crime_criminalite,23,5.83e-06,0.84210527
+la bombe,die Bombe,liste_vocabulaire_allemand_crime_criminalite,9,1.17e-05,0.4117647
+l’émeute,der Aufruhr,liste_vocabulaire_allemand_crime_criminalite,11,3.71e-06,0.78947368
+"l’escroquerie, la fraude",der Betrug,liste_vocabulaire_allemand_crime_criminalite,10,2.75e-05,0.88235294
+la fraude fiscale,"die Steuerhinterziehung, Steuerbetrug",liste_vocabulaire_allemand_crime_criminalite,37,4.68e-07,0.85185185
+l’intrusion,Hausfriedensbruch,liste_vocabulaire_allemand_crime_criminalite,17,8.51e-07,0.7142857
+la négligence,die Fahrlässigkeit,liste_vocabulaire_allemand_crime_criminalite,18,2.19e-06,0.67741936
+la preuve,der Beweis,liste_vocabulaire_allemand_crime_criminalite,10,3.54e-05,0.78947368
+la prison,das Gefängnis,liste_vocabulaire_allemand_crime_criminalite,13,2.88e-05,0.63636363
+la victime,das Opfer,liste_vocabulaire_allemand_crime_criminalite,9,0.000102,0.68421054
+accuser,beschuldigen,liste_vocabulaire_allemand_crime_criminalite,12,1.55e-06,0.89473684
+acquitter,freisprechen,liste_vocabulaire_allemand_crime_criminalite,12,4.37e-07,0.9047619
+agresser,"angreifen, überfallen",liste_vocabulaire_allemand_crime_criminalite,21,4.3e-06,0.58620688
+arrêter (un voleur),festnehmen,liste_vocabulaire_allemand_crime_criminalite,10,2.63e-06,0.79310344
+assassiner,ermorden,liste_vocabulaire_allemand_crime_criminalite,8,3.24e-06,0.77777778
+attaquer,angreifen,liste_vocabulaire_allemand_crime_criminalite,9,8.13e-06,0.76470588
+battre (frapper),schlagen,liste_vocabulaire_allemand_crime_criminalite,8,4.47e-05,0.83333333
+cambrioler,einbrechen,liste_vocabulaire_allemand_crime_criminalite,10,1.78e-06,0.7
+chercher,Suche,liste_vocabulaire_allemand_crime_criminalite,5,0.000126,0.53846154
+condamner,verurteilen,liste_vocabulaire_allemand_crime_criminalite,11,5.62e-06,0.8
+défendre,verteidigen,liste_vocabulaire_allemand_crime_criminalite,11,2.24e-05,0.68421054
+détourner de l’argent,hinterziehen,liste_vocabulaire_allemand_crime_criminalite,12,2.19e-07,0.878787875
+droguer quelqu’un,jn unter Drogen setzen,liste_vocabulaire_allemand_crime_criminalite,22,7.06e-07,0.69230768
+empoisonner,vergiften,liste_vocabulaire_allemand_crime_criminalite,9,2e-06,0.8
+emprisonner,"einsperren, inhaftieren",liste_vocabulaire_allemand_crime_criminalite,23,2.8e-07,0.70588234
+endommager,schaden,liste_vocabulaire_allemand_crime_criminalite,7,6.31e-05,0.76470588
+enfermer,sperren,liste_vocabulaire_allemand_crime_criminalite,7,9.33e-06,0.6
+enlever quelqu’un,entführen,liste_vocabulaire_allemand_crime_criminalite,9,2.95e-06,0.6153846000000001
+enquêter,ermitteln,liste_vocabulaire_allemand_crime_criminalite,9,1.55e-05,0.76470588
+escroquer,betrügen,liste_vocabulaire_allemand_crime_criminalite,8,3.02e-06,0.6470587999999999
+espionner,bespitzeln,liste_vocabulaire_allemand_crime_criminalite,10,2.95e-07,0.4736842
+étrangler,erwürgen,liste_vocabulaire_allemand_crime_criminalite,8,5.5e-07,0.76470588
+être libéré / mis en liberté sous caution,gegen Kaution freigelassen werden,liste_vocabulaire_allemand_crime_criminalite,33,1.96e-06,0.72972974
+"faire chanter, faire du chantage",erpressen,liste_vocabulaire_allemand_crime_criminalite,9,2.34e-06,0.75609756
+faire de la contrebande,schmuggeln,liste_vocabulaire_allemand_crime_criminalite,10,1.17e-06,0.81818181
+forcer,zwingen,liste_vocabulaire_allemand_crime_criminalite,7,1.51e-05,0.8461538399999999
+frauder,Betrügen,liste_vocabulaire_allemand_crime_criminalite,8,3.02e-06,0.7333333200000001
+interroger,befragen,liste_vocabulaire_allemand_crime_criminalite,8,4.9e-06,0.55555555
+kidnapper,"kidnappen, entführen",liste_vocabulaire_allemand_crime_criminalite,20,1.64e-07,0.37931037
+libérer,befreien,liste_vocabulaire_allemand_crime_criminalite,8,1.58e-05,0.6
+maltraiter,misshandeln,liste_vocabulaire_allemand_crime_criminalite,11,5.01e-07,0.7142857
+menacer,"bedrohen, androhen",liste_vocabulaire_allemand_crime_criminalite,18,2.87e-07,0.6799999999999999
+menotter (passer les menottes à qqun),jm Handschellen anlegen,liste_vocabulaire_allemand_crime_criminalite,23,5.22e-07,0.66666666
+"mettre le feu à, incendier",brennen,liste_vocabulaire_allemand_crime_criminalite,7,1.23e-05,0.6969697
+poignarder,stechen,liste_vocabulaire_allemand_crime_criminalite,7,6.61e-06,0.88235294
+prendre en otage,geiselnehmen,liste_vocabulaire_allemand_crime_criminalite,12,0.0,0.85714285
+prouver,beweisen,liste_vocabulaire_allemand_crime_criminalite,8,3.39e-05,0.86666666
+questionner,befragen,liste_vocabulaire_allemand_crime_criminalite,8,4.9e-06,0.78947368
+résister,widerstehen,liste_vocabulaire_allemand_crime_criminalite,11,5.01e-06,0.5789473700000001
+se prostituer,sich prostituieren,liste_vocabulaire_allemand_crime_criminalite,18,2.57e-07,0.22580650000000002
+tirer,Schießen,liste_vocabulaire_allemand_crime_criminalite,8,2.29e-05,0.69230768
+traduire en justice,vor Gericht zu bringen,liste_vocabulaire_allemand_crime_criminalite,22,4.82e-05,0.7073170799999999
+tuer,töten,liste_vocabulaire_allemand_crime_criminalite,5,2.69e-05,0.55555555
+violer,verletzen,liste_vocabulaire_allemand_crime_criminalite,9,1.07e-05,0.6
+voler,stehlen,liste_vocabulaire_allemand_crime_criminalite,7,6.76e-06,0.66666666

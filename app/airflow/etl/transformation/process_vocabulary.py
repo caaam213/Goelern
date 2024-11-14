@@ -7,9 +7,9 @@ from typing import Union
 import pandas
 
 sys.path.insert(0, "/opt/")
-from constants.s3_constants import PREPROCESSED_DATA, S3_BUCKET
+from constants.s3_constants import PREPROCESSED_DATA, RAW_DATA, S3_BUCKET
 from utils.utils_files.s3_utils import get_data_from_s3, save_data_on_s3
-from utils.utils_mongo.operation_mongo import find_data, update_data
+from utils.utils_mongo.operation_mongo import add_data, find_data, update_data
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import length
 from pyspark.sql.functions import udf
@@ -34,7 +34,7 @@ class ProcessVocabulary:
             float: Similarity score between the word and its translation.
             The score is between 0 and 1, where 1 means the words are identical and 0 means the words are different.
         """
-        return 1 - SequenceMatcher(None, word, translation).ratio()
+        return 1-SequenceMatcher(None, word, translation).ratio()
 
     def _get_word_frequency(self, word: str, lang) -> float:
         """Get the frequency of a word in a language
@@ -68,6 +68,8 @@ class ProcessVocabulary:
         file_name = file_info.get("file_name")
         lang = file_info.get("lang")
         scrap_url = file_info.get("scrap_url")
+        
+        logging.info(f"File name: {file_name}, Language: {lang}, Scrap URL: {scrap_url}")
             
         data_lang = find_data(mongo_hook, os.environ["MONGO_DB_DEV"], "constants", {"language": lang}, True)
         
@@ -76,7 +78,7 @@ class ProcessVocabulary:
             return None
         
         # Extract data from s3
-        file_content = get_data_from_s3(S3_BUCKET, file_name)
+        file_content = get_data_from_s3(S3_BUCKET, f"{RAW_DATA}/{file_name}")
         
         if not file_content:
             logging.error("No data found in the file")
@@ -126,9 +128,14 @@ class ProcessVocabulary:
         update_data(mongo_hook, os.environ["MONGO_DB_DEV"], "parameters",{"scrap_url": scrap_url, "language":lang} ,{"status": "WAITING FOR AI PROCESSING"})
         
         # Save the data on S3
+        date = datetime.now().strftime("%Y%m%d")
         save_data_on_s3(S3_BUCKET, f"{PREPROCESSED_DATA}/goelern_{date}.csv", df_pandas.to_csv(index=False))
         
+    
+        # path_csv_file = f"/opt/airflow/data/goelern_{date}_8.csv"
+        # df_pandas.to_csv(path_csv_file, index=False)
+        
         # Add the file name to mongodb
-        update_data(mongo_hook, os.environ["MONGO_DB_DEV"], "raw_files", {"file_name": f"goelern_{date}.csv"}, {"file_name": f"goelern_{date}.csv","status": "WAITING FOR AI PROCESSING", "lang":lang, "created_date":date}, True)
+        update_data(mongo_hook, os.environ["MONGO_DB_DEV"], "raw_files", {"file_name": f"goelern_{date}.csv", "scrap_url":scrap_url},{"status": "WAITING FOR AI PROCESSING", "lang":lang, "created_date":date, "scrap_url":scrap_url}, True)
         
         return df_pandas

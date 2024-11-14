@@ -128,14 +128,14 @@ class ScrapVocabulary(AbstractRequest):
 
         vocabulary_list = self._extract_urls_in_bs4(response, category)
         df_vocabularies = pd.DataFrame(vocabulary_list, columns=[
-                base_name_col,
                 trans_name_col,
+                base_name_col,
+                
                 "Category",
             ])
         date = datetime.now().strftime("%Y%m%d")
     
-        path_csv_file = f"/opt/airflow/data/goelern_{date}.csv"
-        df_vocabularies.to_csv(path_csv_file, index=False)
+
         
         # Change the status of the data
         update_data(mongo_hook, os.environ["MONGO_DB_DEV"], "parameters",{"scrap_url": scrap_url, "language":lang} ,{"status": "WAITING FOR PROCESSING"})
@@ -145,6 +145,6 @@ class ScrapVocabulary(AbstractRequest):
         save_data_on_s3(S3_BUCKET, file_name, df_vocabularies.to_csv(index=False))
         
         # Add the file name to mongodb
-        add_data(mongo_hook, os.environ["MONGO_DB_DEV"], "raw_files", {"file_name": file_name,"status": "WAITING FOR PROCESSING", "lang":lang, "created_date":date, "scrap_url":scrap_url}, True)
+        add_data(mongo_hook, os.environ["MONGO_DB_DEV"], "raw_files", {"file_name": f"goelern_{date}.csv","status": "WAITING FOR PROCESSING", "lang":lang, "created_date":date, "scrap_url":scrap_url}, True)
         
         return vocabulary_list

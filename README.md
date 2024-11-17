@@ -23,6 +23,10 @@ Then, those data will be used to create a web interface to learn German.
     docker build --pull --rm -f "webapp\Dockerfile" -t webapp:latest "webapp"
 ```
 
+```
+    docker build --pull --rm -f "app\tests\Dockerfile" -t goelern-tests:latest "app\tests"
+```
+
 3. Rename docker-compose-default.yaml to docker-compose.yaml and add amazonS3 Credentials
 
 4. Execute the docker-compose file in order to activate the needed images. 
@@ -39,6 +43,46 @@ The images are :
 ![mongo_airflow](/readme_images/mongo_airflow.png)
 
 6. You can now use the airflow interface to execute the DAG :)
+
+## Unit tests
+To run the unit tests, follow these steps:
+
+To open the shell for the container, execute the following command: 
+```
+    docker exec -it goelern-tests-1 bash
+```
+
+Once inside the container, run the command below to execute the unit tests:
+```
+    pytest -v /opt/tests
+```
+
+If you'd like to run a specific test file or function, use the command:
+```
+    pytest /opt/tests/TESTFILE.py::FUNCTIONTOTEST
+```
+
+To include test coverage, run the following command:
+```
+    pytest --cov=/opt/tests /opt/tests
+```
+
+
+
+The test results will be shown as:
+```
+tests-1  | ============================= test session starts ==============================                                                                                                                     
+tests-1  | platform linux -- Python 3.12.7, pytest-8.3.3, pluggy-1.5.0
+tests-1  | rootdir: /opt/tests                                                                                                                                                                                  
+tests-1  | plugins: time-machine-2.16.0, anyio-4.6.2.post1                                                                                                                                                      
+tests-1  | collected 5 items                                                                                                                                                                                    
+tests-1  |                                                                                                                                                                                                      
+tests-1  | opt/tests/test_scrap_vocabulary.py .....                                 [100%]                                                                                                                      
+tests-1  | 
+tests-1  | ============================== 5 passed in 1.27s ===============================
+```
+
+
 
 ## Architecture
 ### App folder 
@@ -80,7 +124,8 @@ When a URL is treated, its status is changed, so it can't be scraped again:
  
 
 ## Future Enhancements
-- [ ] Save words on MONGODB at the end of the DAG
+- [x] Save words on MONGODB at the end of the DAG
+- [ ] Add a button to save data in a txt file
 - [ ] Verify and clean the existing code
 - [ ] Rename difficulty_model.Pkl for each language
 - [ ] Create an interface where a user can create queries for airflow pipeline by providing the url and language to scrap 
@@ -90,4 +135,3 @@ If the user find the word correctly, the score of the word is reduced by one, el
 - [ ] Write a complete README with functionnalities and how to execute the code
 - [ ] Generate some sentences using a LLM to understand how to use a word 
 - [ ] Add Unit test
-- [ ] Use airflow to call periodically the tasks : get data and send every hour a word with its translation. If the score of a word is high, this one has a lot of chance to be chosen to be sent for the user

@@ -90,9 +90,28 @@ class ScrapVocabulary(AbstractRequest):
             bool: True if the url is valid else False
         """
         return bool(re.match(self.pattern, scrap_url))
+    
+    def _save_data(self, mongo_hook: MongoHook, df_vocabularies: pd.DataFrame, lang: str, scrap_url: str, category:str) -> None:
+        """Save the data on S3 and add the file name to MongoDB
+
+        Args:
+            mongo_hook (MongoHook): Airflow hook for MongoDB connection
+            df_vocabularies (pd.DataFrame): Data to save
+            lang (str): Language of the vocabulary list
+            scrap_url (str): Url of the vocabulary list
+        """
+        # Get the date
+        date = datetime.now().strftime("%Y-%m-%d")
+        
+        # Save the data on S3
+        file_name = f"{RAW_DATA}/goelern_{category}_{date}.csv"
+        save_data_on_s3(S3_BUCKET, file_name, df_vocabularies.to_csv(index=False))
+        
+        # Add the file name to mongodb
+        add_data(mongo_hook, os.environ["MONGO_DB_DEV"], "raw_files", {"file_name": f"goelern_{date}.csv","status": "WAITING FOR PROCESSING", "lang":lang, "created_date":date, "scrap_url":scrap_url}, True)
 
     def run(self, mongo_hook: MongoHook, lang:str, scrap_url: str) -> list:
-        """Run the component
+        """Run the component to scrap the vocabulary list
 
         Args:
             mongo_hook (MongoHook): Airflow hook for MongoDB connection
@@ -120,7 +139,6 @@ class ScrapVocabulary(AbstractRequest):
 
         # Get title of the page
         category = self._get_category(scrap_url)
-
         response = self.get_data(scrap_url)
 
         if not response:
@@ -130,21 +148,13 @@ class ScrapVocabulary(AbstractRequest):
         df_vocabularies = pd.DataFrame(vocabulary_list, columns=[
                 trans_name_col,
                 base_name_col,
-                
                 "Category",
             ])
-        date = datetime.now().strftime("%Y%m%d")
-    
-
         
         # Change the status of the data
         update_data(mongo_hook, os.environ["MONGO_DB_DEV"], "parameters",{"scrap_url": scrap_url, "language":lang} ,{"status": "WAITING FOR PROCESSING"})
         
-        # Save the data on S3
-        file_name = f"{RAW_DATA}/goelern_{date}.csv"
-        save_data_on_s3(S3_BUCKET, file_name, df_vocabularies.to_csv(index=False))
-        
-        # Add the file name to mongodb
-        add_data(mongo_hook, os.environ["MONGO_DB_DEV"], "raw_files", {"file_name": f"goelern_{date}.csv","status": "WAITING FOR PROCESSING", "lang":lang, "created_date":date, "scrap_url":scrap_url}, True)
+        # Save the data
+        self._save_data(mongo_hook, df_vocabularies, lang, scrap_url)
         
         return vocabulary_list

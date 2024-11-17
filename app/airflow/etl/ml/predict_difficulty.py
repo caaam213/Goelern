@@ -1,5 +1,6 @@
 from datetime import datetime
 from io import StringIO
+import json
 import logging
 import os
 import sys
@@ -24,7 +25,7 @@ from etl.ml.manage_data import get_train_data
 
 sys.path.insert(0, "/opt/")
 from utils.utils_ml.load_save_model import load_trained_model, save_trained_model
-from utils.utils_mongo.operation_mongo import find_data, update_data
+from utils.utils_mongo.operation_mongo import add_data, find_data, update_data
 from utils.utils_files.s3_utils import get_data_from_s3, save_data_on_s3
 from constants.s3_constants import POSTPROCESSED_DATA, PREPROCESSED_DATA, S3_BUCKET
 from constants.file_constants import TRAINED_MODEL_PATH_FILE
@@ -150,24 +151,24 @@ class PredictDifficulty:
         centers = kmeans_model.cluster_centers_
         logging.info(f"Cluster centers: {centers}")
 
-        # Trier les centres des clusters en fonction de la somme de leurs valeurs (ou une autre métrique de votre choix)
-        center_sums = np.sum(centers, axis=1)  # Calculer la somme des coordonnées pour chaque centre
-        sorted_indices = np.argsort(center_sums)  # Trier les indices des centres en fonction de la somme
+        
+        center_sums = np.sum(centers, axis=1)  
+        sorted_indices = np.argsort(center_sums) 
 
         logging.info(f"Sorted cluster indices based on sum of coordinates: {sorted_indices}")
 
-        # Mappez les indices triés à des labels de difficulté
+       
         difficulty_labels = {sorted_indices[2]: "easy", sorted_indices[1]: "medium", sorted_indices[0]: "difficult"}
 
         logging.info(f"Difficulty levels mapping: {difficulty_labels}")
 
-        # Mapper les prédictions aux niveaux de difficulté
+        
         mapped_difficulties = [difficulty_labels[p] for p in predictions]
 
-        # Ajouter la colonne 'difficulty' dans data_predict
+        
         data_predict["difficulty_label"] = mapped_difficulties
 
-        # Vérifier les résultats
+        
         logging.info(f"Difficulty labels applied: {data_predict['difficulty_label']}")
         logging.info(data_predict[["difficulty_label"]].head())
         
@@ -178,5 +179,9 @@ class PredictDifficulty:
         # Add the file name to mongodb
         update_data(mongo_hook, os.environ["MONGO_DB_DEV"], "raw_files", {"file_name": f"goelern_{date}.csv"}, {"file_name": f"goelern_{date}.csv","status": "FINISHED", "lang":lang, "created_date":date}, True)
         
+        # Store the data in MongoDB
+        data_json = data_predict.to_json(orient="records")
+        data_json = json.loads(data_json)
+        add_data(mongo_hook, os.environ["MONGO_DB_DEV"], "words", data_json)
        
         

@@ -95,19 +95,16 @@ class CrawlingVocListUrls(AbstractRequest):
                 SCRAP_URL_FILE_NAME.format(data_lang.get("language")), data
             )
 
-    def run(self, mongo_hook, lang:str, use_s3: bool = False) -> list:
+    def run(self, mongo_hook, lang:str) -> list:
         """
-            Run the component
-
+            Run the component to extract the urls of the vocabulary lists from the global url
         Args:
             data_lang (str): language of the data to scrap
-            use_s3 (bool, optional): True if the data is saved on s3, else False. Defaults to False.
 
         Returns:
             list: list of urls to scrap
         """
         data_lang = find_data(mongo_hook, os.environ["MONGO_DB_DEV"], "constants", {"language": lang}, True)
-        # Check if data_lang is not empty (means that the chosen lang is invalid)
         if not data_lang:
             return []
 
@@ -117,9 +114,6 @@ class CrawlingVocListUrls(AbstractRequest):
             return voc_list_urls
 
         voc_list_urls = self._extract_urls_in_bs4(response)
-
-        # Save the data on S3 or locally
-        self._save_data(data_lang,voc_list_urls, use_s3)
         
         # Format the data for mongo
         voc_list_urls = [{"scrap_url": voc_list_url["scrap_url"], 'language':lang, "status":"WAITING"} for voc_list_url in voc_list_urls]

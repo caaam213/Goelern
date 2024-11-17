@@ -1,0 +1,8 @@
+pytest
+beautifulsoup4
+requests
+pandas
+apache-airflow
+apache-airflow-providers-mongo
+boto3
+pytest-cov

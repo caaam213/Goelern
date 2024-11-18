@@ -125,8 +125,9 @@ When a URL is treated, its status is changed, so it can't be scraped again:
 
 ## Future Enhancements
 - [x] Save words on MONGODB at the end of the DAG
+- [x] Verify and clean the existing code
 - [ ] Add a button to save data in a txt file
-- [ ] Verify and clean the existing code
+- [ ] Manage the errors to add them to the database when something is wrong
 - [ ] Rename difficulty_model.Pkl for each language
 - [ ] Create an interface where a user can create queries for airflow pipeline by providing the url and language to scrap 
 - [ ] Test with window functions and CTEs to practice. Those functions will be called using an API

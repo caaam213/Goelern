@@ -4,7 +4,7 @@ from typing import Union
 
 
 
-from constants.mongo_constants import CONSTANTS_TABLE
+from app.constants.collections_constants import CONSTANTS_TABLE
 from utils.utils_mongo.connection import create_client
 
 

@@ -3,7 +3,7 @@ from typing import Union
 import pandas as pd
 
 sys.path.insert(0, "/opt/airflow/")
-from constants.file_constants import VOCABULARY_FILE, VOCABULARY_FILE_2
+from constants.file_constants import VOCABULARY_FILE
 from utils.utils_files.local_files_utils import load_csv
 
 
@@ -19,8 +19,5 @@ def get_train_data(lang: str) -> Union[pd.DataFrame, None]:
 
     # Verify if the file doesnt exist
     data = load_csv(VOCABULARY_FILE.format(lang))
-    
-    # Save the data in a csv file
-    data.to_csv(VOCABULARY_FILE_2.format(lang), index=False)
     
     return data
